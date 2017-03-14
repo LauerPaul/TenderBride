@@ -1,3 +1,27 @@
+/* -------------WEBKIT SCROLL------------- */
+::-webkit-scrollbar{
+    width:12px;
+}
+::-webkit-scrollbar-thumb{
+	border-width:1px 1px 1px 2px;
+	border-color: $default-color;
+	background-color: rgba(75, 75, 75, 0.3);
+	border-radius: 10px;
+    
+    &:hover{
+		background-color: rgba(75, 75, 75, 0.68);
+	}
+}
+::-webkit-scrollbar-track{
+    border-width:0;
+    
+    &:hover{
+		border-left: solid 1px rgba(75, 75, 75, 0.2);
+		background-color: #eee;
+	}
+}
+/* --------- *WEBKIT SCROLL END* --------- */
+
 body.user {
 	.container {
 		@media (max-width: 991px) and (min-width: 768px){
@@ -360,3 +384,12 @@ h3{
 	}   
 }
 /* -------------*.form-control end*------------- */
+i.ico-chat {
+	background: rgba(0, 0, 0, 0) url(../image/icon/sprite.png) no-repeat scroll -90px -23px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	margin-right: 5px;
+}
