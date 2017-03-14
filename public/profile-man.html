@@ -52,86 +52,7 @@
     </div>
     <!-- *MENU BLOCK END*-->
     <!-- ---------------------- USER PANEL --------------------- -->
-    <!-- ------------------ USER PANEL ------------------ -->
-    <div class="container-fluid full" id="user-panel">
-      <div class="lable-toggle-userpanel hvr-box-shadow-outset"></div>
-      <div class="row inner-wrapper">
-        <div class="col-md-12 inner">
-          <div class="top-block-user-panel"><a class="img-profile-userpanel" href="#"><img src="https://tenderbride.com/files/users/photos/100077/72e10f34598ced4e01d4ae2b5fe1ff72.jpg" alt=""/></a>
-            <div class="block-name-info-userpanel">
-              <!-- span.lable-credits-info-userpanel + credits--><a href="#">Pavel</a>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-          <div class="wrapp-list-item-userpanel">
-            <!--balance-->
-            <div class="item item-balance item-active">
-              <div class="name ico ico-balance">
-                <div class="hidenn-mini">My credits<span class="count-item-userpanel" id="text-user-balance">18.00</span></div>
-                <div class="new">23</div>
-              </div>
-            </div>
-            <!-- views-->
-            <div class="item item-views item-active">
-              <div class="name ico ico-views">
-                <div class="hidenn-mini">Was my guest <span class="count-item-userpanel" id="text-user-balance">54</span></div>
-                <div class="new">30</div>
-              </div>
-            </div>
-            <!-- smiled-->
-            <div class="item item-wink item-active">
-              <div class="name ico ico-wink">
-                <div class="hidenn-mini">Smiled me<span class="count-item-userpanel" id="text-user-balance">120</span></div>
-                <div class="new">100</div>
-              </div>
-            </div>
-            <!-- liked-->
-            <div class="item item-like item-active">
-              <div class="name ico ico-like">
-                <div class="hidenn-mini">Smiled me<span class="count-item-userpanel" id="text-user-balance">120</span></div>
-                <div class="new">40</div>
-              </div>
-            </div>
-            <!-- favorite-->
-            <div class="item item-fav item-active">
-              <div class="name ico ico-fav">
-                <div class="hidenn-mini">Added to friends <span class="count-item-userpanel" id="text-user-balance">12</span></div>
-                <div class="new">10</div>
-              </div>
-            </div>
-            <!-- Received letters-->
-            <div class="item item-mess item-active">
-              <div class="name ico ico-mess">
-                <div class="hidenn-mini">Received letters <span class="count-item-userpanel" id="text-user-balance">220</span></div>
-                <div class="new">20</div>
-              </div>
-            </div>
-            <!--button chat-->
-            <div class="item-openchat" onclick="chat.openWin(&quot;blank&quot;)">OPEN<br/>CHAT</div>
-          </div>
-          <!-- Bottom buttons-->
-          <div class="block-bottom-userpanel">
-            <div class="more-option-userpanel">More
-              <ul class="list-unstyled setup-menu-more-userpanel-hide animated slideInLeft">
-                <li>
-                  <form action="javascript: sound_toggle()">
-                    <button class="item-sound-switch"><span class="data-check-sound" data-check-sound="Volume OFF">Volume ON</span><span class="icon_more_userpanel ico-sound-switch volume ico-sound"></span></button>
-                  </form>
-                </li>
-                <li class="edit_profile"><a class="clear" href="#"><span>Change personal info</span><span class="icon_more_userpanel edit_ptofile"></span></a></li>
-                <li><a class="clear" href="#"><span>Video gallery</span><span class="icon_more_userpanel my_videos"></span></a></li>
-                <li><a class="clear" href="#"><span>Photo gallery</span><span class="icon_more_userpanel my_photos"></span></a></li>
-                <li>
-                  <form action="javascript:profile.logout()">
-                    <button><span>Log out</span><span class="icon_more_userpanel log_out"></span></button>
-                  </form>
-                </li>
-              </ul>
-            </div><a class="profile-edit-option-userpanel clear" href="#">Change personal info</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!--include include/user-panel-->
     <!-- ------------------- *USER PANEL END* ------------------ -->
     <!-- ---------------------- PROFILE CONENT ------------- -->
     <div class="container">
@@ -182,7 +103,95 @@
       </div>
       <div class="container-fluid account_tab_container">
         <div class="container">
-          <div class="favorite_girls_block item_tabs favorite_g active"></div>
+          <div class="favorite_girls_block item_tabs favorite_g active">
+            <h3>Girls in my friends list</h3>
+            <div class="item-user-span">
+              <!-- ---------------------- ROW GIRLS LIST ------------------------>
+              <div class="row girl-list">
+                <!-- -------------------------- ITEM ----------------------------------->
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                  <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                      <div class="photo-block"><img src="../public/image/girls/1.jpg" alt="Evgeniya"/></div>
+                      <p class="description-item-one"><span class="old_this_user">24 years</span><span class="country_this_user">Ukraine</span></p>
+                      <div class="clearfix"></div>
+                      <p class="name-user-item">Evgeniya</p>
+                      <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100327</span><span class="has-webcam-label"></span></div></a>
+                    <div class="special-actions-buttons">
+                      <div class="button_item_user_block">
+                        <ul>
+                          <li class="disabled"><span class="ico ico-chat disabled"><i></i>Chat now</span></li>
+                          <li><span class="ico ico-mail">Send Mail</span></li>
+                          <li><span class="ico ico-wink">Smile</span></li>
+                          <li><span class="ico ico-like">LIKE</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- -------------------------- ITEM ----------------------------------->
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                  <div class="item-user-profile-mini" data-user-id="11111"><a class="clear" href="#">
+                      <div class="photo-block"><span class="online-label hvr-bounce-in">ONLINE</span><img src="../public/image/girls/2.jpg" alt="Evgeniya"/></div>
+                      <p class="description-item-one"><span class="old_this_user">22 years</span><span class="country_this_user">Nikolaev, Ukraine</span></p>
+                      <div class="clearfix"></div>
+                      <p class="name-user-item">Lovely angel</p>
+                      <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100004</span></div></a>
+                    <div class="special-actions-buttons">
+                      <div class="button_item_user_block">
+                        <ul>
+                          <li><span class="ico ico-chat disabled"><i></i>Chat now</span></li>
+                          <li><span class="ico ico-mail">Send Mail</span></li>
+                          <li><span class="ico ico-wink">Smile</span></li>
+                          <li><span class="ico ico-like">LIKE</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- -------------------------- ITEM ----------------------------------->
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                  <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                      <div class="photo-block"><img src="../public/image/girls/3.jpg" alt="Evgeniya"/></div>
+                      <p class="description-item-one"><span class="old_this_user">29 years</span><span class="country_this_user">Ukraine</span></p>
+                      <div class="clearfix"></div>
+                      <p class="name-user-item">Ekaterina</p>
+                      <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100315</span><span class="has-webcam-label"></span></div></a>
+                    <div class="special-actions-buttons">
+                      <div class="button_item_user_block">
+                        <ul>
+                          <li class="disabled"><span class="ico ico-chat disabled"><i></i>Chat now</span></li>
+                          <li><span class="ico ico-mail">Send Mail</span></li>
+                          <li><span class="ico ico-wink">Smile</span></li>
+                          <li><span class="ico ico-like">LIKE</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- -------------------------- ITEM ----------------------------------->
+                <div class="col-md-4 col-sm-6 col-xs-6">
+                  <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                      <div class="photo-block"><img src="../public/image/girls/4.jpg" alt="Evgeniya"/></div>
+                      <p class="description-item-one"><span class="old_this_user">20 years</span><span class="country_this_user">Ukraine</span></p>
+                      <div class="clearfix"></div>
+                      <p class="name-user-item">Diana</p>
+                      <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100324</span><span class="has-webcam-label"></span></div></a>
+                    <div class="special-actions-buttons">
+                      <div class="button_item_user_block">
+                        <ul>
+                          <li class="disabled"><span class="ico ico-chat disabled"><i></i>Chat now</span></li>
+                          <li><span class="ico ico-mail">Send Mail</span></li>
+                          <li><span class="ico ico-wink">Smile</span></li>
+                          <li><span class="ico ico-like">LIKE</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------------- *ROW GIRLS LIST END* --------------------->
+            </div>
+          </div>
         </div>
       </div>
     </div>

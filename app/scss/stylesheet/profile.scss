@@ -93,6 +93,7 @@
 	background: #f9f9f9;
 	padding: 40px 20px;
 	min-height: 160px;
+	float: right;
 
 	.block-credits{
 		.account-credits-title {
@@ -202,12 +203,25 @@
 	.account_tab_container {
 		position: relative;
 		overflow: hidden;
-		padding: 90px 0px;
+		padding: 50px 0px;
 		z-index: 10;
 		margin: 0 -15px;
 		box-shadow: 0px 2px 19px 3px rgba(0,0,0,0.21);
 		-webkit-box-shadow: 0px 2px 19px 3px rgba(0,0,0,0.21);
 		-moz-box-shadow: 0px 2px 19px 3px rgba(0,0,0,0.21);
+		
+		.favorite_girls_block {
+			
+			h3 {
+				font-size: 40px;
+				padding-left: 20px;
+				margin-bottom: 50px;
+			}
+
+			.girl-list {
+				padding: 0px;
+			}
+		}
 	}
 }
 /* -------------- *PROFILE END* -------------- */
