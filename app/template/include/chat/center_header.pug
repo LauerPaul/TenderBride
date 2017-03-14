@@ -1,0 +1,60 @@
+//HEADER
+.info-block.info-block-has-cam
+	.full-info.row(data-user-id='170')
+		.col-md-4.paddingR
+			.camera-block
+				.item.camera-block-off
+					|Her web cam is down now :(
+				.item.camera-block-on
+					|Tatyana turned on her web cam!
+					br
+					button.start-girl-camera(disabled='')
+						i.fa.fa-check(aria-hidden='true')
+						|Turn on her Cam
+		.col-md-2.paddingL
+			.photo.is-zoom(onclick="$('#user-photo-avatar-170').click()")
+				a
+					img(src='../public/image/girls/5.jpg')
+		.col-md-6
+			.container-fluid
+				.row
+					.col-md-9.not-padding
+						.name
+							a(href='#') Tatyana
+					.col-md-3.not-padding-right
+						span.id ACCOUNT
+							br
+							|№100049
+						.clearfix
+				.row
+					.col-md-12.not-padding
+						.special-actions-buttons.buttons
+							ul.buttons-us.list-inline
+								li
+									span.ico.ico-mail Send Mail
+								li
+									span.ico.ico-wink Smile
+								li
+									span.ico.ico-like LIKE
+				.row
+					.col-md-12.not-padding
+						.special-actions-buttons.buttons.favorite-span
+							i.fa.fa-star-o(aria-hidden='true')
+							i.fa.fa-star(aria-hidden='true')
+							span.ico.ico-star.ico-fav(onclick='$(this).hide()', data-toggle='Remove from friends', data-text='Add to friends') ADD TO FRIENDS
+				.row
+					.col-md-12.not-padding
+						.chat-info-block
+							.timers
+								.text.chat Text dialog:
+								.chat
+									span.text-center.time 02:40
+								span.chat-buttons
+									a.radius4.stop-chat FINISH
+							.timers
+								.text.video-chat Web Cam:
+								.video-chat
+									span.text-center.time 02:40
+								span.chat-buttons
+									a.radius4.stop-video FINISH
+//HEADER END

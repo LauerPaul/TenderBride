@@ -1,0 +1,31 @@
+/* -------------Slider block Index page------------- */
+.slider_block {
+	margin-left: -15px;
+	margin-right: -15px;
+	overflow: hidden;
+	text-align: center;
+	max-height: 648px;
+
+	.item{
+		@media (max-width: 1350px) and (min-width: 1040px) {
+		  left: -15% !important;
+		}
+		@media (max-width: 1040px) and (min-width: 962px){
+		  left: -25% !important;
+		}
+
+		img{
+			min-width: 100%;
+			
+			@media (min-width: 962px){
+				max-width: none !important;
+			}
+		}
+	}
+
+	@media (min-width: 962px) {
+		min-height: 590px;
+	}
+
+}
+/* ---------- *Slider block Index page END* ---------- */

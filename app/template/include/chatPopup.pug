@@ -1,0 +1,23 @@
+// Chat POP-UP
+#chat-popup.open(data-id='2')
+	.wrapper-popup-chat-now
+		.close(onclick='chatPopup.min()') close
+			i
+		.title 16 Girls 
+			span Invited to Chat
+		.content
+			.name Elena
+			.age 24 Age
+			span.has-webcam-label.active(style='position: relative; float: right;')
+			.photo.hvr-grow-shadow
+				.special-photo
+					img.hvr-grow(src='../public/image/girls/elena.jpg')
+					span.online-label ONLINE
+			.say Hello) Can you help me to relax?
+			button.btn.btn-primary(onclick='popup.show("#registration")', type='button') Start Chat
+	.lable-popup-hide-cont-message
+		a.btn.btn-primary 
+			i.fa.fa-comments-o(aria-hidden='true')
+			|16 NEW 
+			span.invitation INVITATION
+// *Chat POP-UP END*

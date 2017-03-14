@@ -1,0 +1,858 @@
+
+<html>
+  <head>
+    <!-- -------------------------------------------------------- -->
+    <!-- --------------------------META-------------------------- -->
+    <!-- -------------------------------------------------------- -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Online Dating Site for Men. Find Your Love - TenderBride.com</title>
+    <!-- -------------------------------------------------------- -->
+    <!-- ------------------------*META END*---------------------- -->
+    <!-- -------------------------------------------------------- -->
+    <!-- --------------------------STYLES------------------------ -->
+    <!-- -------------------------------------------------------- -->
+    <!-- ***************** font-awesome styles ****************** -->
+    <link rel="stylesheet" href="../public/css/_lib/font-awesome.min.css"/>
+    <!-- ******************** animate styles ******************** -->
+    <link rel="stylesheet" href="../public/css/_lib/animate.min.css"/>
+    <!-- ********************* JQ UI SLEDER ******************** -->
+    <link rel="stylesheet" href="../public/css/_lib/jquery-ui.minSlider.css"/>
+    <!--  ***************** default TB styles ******************* -->
+    <link rel="stylesheet" href="../public/css/main.css"/>
+    <!-- -------------------------------------------------------- -->
+    <!-- -----------------------*STYLES END*--------------------- -->
+    <!-- -------------------------------------------------------- -->
+    <!-- ***************** Jquery plugin include **************** -->
+    <!-- -------------------------------------------------------- -->
+    <script src="../public/(JS)EcmaScript/_lib/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <!-- ---------------------- SEARCH PAGE --------------------- -->
+    <!-- MENU BLOCK-->
+    <div class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="glyphicon glyphicon-align-justify"></span></button><a class="navbar-brand" href="#"><img src="../public/image/logo_small.png" alt="Tender Bride"/></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav center-block">
+              <li><a href="#">
+                  <div class="online_count_label">Online</div>GIRLS ONLINE</a></li>
+              <li><a href="#">Our website</a></li>
+              <li class="logo-site"><a href="/"><img src="../public/image/logo.png" alt="tenderbride.com"/></a></li>
+              <li><a href="#">Price policy</a></li>
+              <li><a href="#">Contact details</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *MENU BLOCK END*-->
+    <!-- ---------------------- TITLE SECTION --------------------- -->
+    <div class="container">
+      <div class="row">
+        <h1 class="grey-mini">SEARCH SINGLE WOMEN</h1>
+        <h3 class="text-center">Choose the best girl for you</h3>
+      </div>
+    </div>
+    <!-- ------------------- *TITLE SECTION END* ------------------ -->
+    <div class="container search-page clearfix">
+      <!-- ---------------------- TOP SEARCH SECTION ------------- -->
+      <div class="row">
+        <div class="col-md-12">
+          <form class="pull-right form-inline search-main-form" onsubmit="return false">
+            <div class="input-group search">
+              <input class="form-control" id="s_id_lau" type="text" name="id" autocomplete="off" placeholder="Account №"/><span class="input-group-addon fa fa-search" aria-hidden="true"></span>
+            </div>
+            <div class="input-group search">
+              <input class="form-control" id="s_name_lau" type="text" name="name" autocomplete="off" placeholder="Nickname of girl"/><span class="input-group-addon fa fa-search" aria-hidden="true"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- ------------------- *TOP SEARCH SECTION END* ----------- -->
+      <div class="row">
+        <div class="col-md-3">
+          <!-- ---------------------- FILTERS SECTION ---------------------- -->
+          <form class="search-main-form" onsubmit="return false">
+            <input type="hidden" name="type" value="W"/>
+            <!-- ITEM -->
+            <div class="block-toggle open item-newcomer">
+              <!-- NEW GIRLS -->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>NEW GIRLS<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter">
+                <div class="one-selector">
+                  <input name="new" value="0" type="hidden"/>
+                  <div class="clearfix"><a class="clear" data-value="1">
+                      <input class="flat" id="new_girl" type="radio" value="1" data-value="1" name="new"/>
+                      <label for="new_girl">Show only new Girls</label></a></div>
+                  <div class="clearfix"><a class="clear active" data-value="0">
+                      <input class="flat" id="all-girls" type="radio" value="0" data-value="1" name="new" checked="checked"/>
+                      <label for="all-girls">Show all Girls</label></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM -->
+            <div class="block-toggle open item-online">
+              <!-- GIRLS ONLINE-->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>GIRLS ONLINE<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter">
+                <div class="one-selector">
+                  <input name="online" value="" type="hidden"/>
+                  <div class="clearfix"><a class="clear" data-value="1">
+                      <input id="online-girls" type="radio" value="1" name="online"/>
+                      <label for="online-girls">Girls Online</label></a></div>
+                  <div class="clearfix"><a class="clear active" data-value="0">
+                      <input id="all-online-offline" type="radio" value="0" name="online" checked="checked"/>
+                      <label for="all-online-offline">Show all Girls</label></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM -->
+            <div class="block-toggle open item-webcam" id="webcam_i">
+              <!-- WEBCAM-->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>WEBCAM<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter">
+                <div class="one-selector">
+                  <input name="webcam" value="" type="hidden"/>
+                  <div class="clearfix"><a class="clear" data-value="1">
+                      <input id="Webcam" type="radio" value="1" name="webcam"/>
+                      <label for="Webcam">Girls with Webcam</label></a></div>
+                  <div class="clearfix"><a class="clear active" data-value="0">
+                      <input id="all-Webcam" type="radio" value="0" name="webcam" checked="checked"/><label for='all-Webcam'>Show all Girls</label></a></div>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM -->
+            <div class="block-toggle open item-age">
+              <!-- AGE -->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>AGE<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter item-age">
+                <div class="slider" data-min="18" data-value-min="18" data-max="49" data-value-max="49" data-name="age">
+                  <div class="ui-slider"><a class="ui-slider-handle l_inp"></a><a class="ui-slider-handle r_inp"> </a></div>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM -->
+            <div class="block-toggle item-height">
+              <!-- HEIGHT -->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>HEIGHT<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter item-age">
+                <div class="slider" data-min="0" data-value-min="0" data-max="180" data-value-max="180" data-name="height">
+                  <div class="ui-slider"><a class="ui-slider-handle l_inp"></a><a class="ui-slider-handle r_inp"> </a></div>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM -->
+            <div class="block-toggle item-physique-color open">
+              <!-- PHYSIQUE -->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>BODY<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter">
+                <div class="clearfix">
+                  <input id="lean" type="checkbox" name="physique" value="" checked="checked"/>
+                  <label for="lean">lean</label>
+                </div>
+                <div class="clearfix">
+                  <input id="sportive" type="checkbox" name="physique" value="" checked="checked"/>
+                  <label for="sportive">sportive</label>
+                </div>
+                <div class="clearfix">
+                  <input id="normal" type="checkbox" name="physique" value="" checked="checked"/>
+                  <label for="normal">normal</label>
+                </div>
+                <div class="clearfix">
+                  <input id="heavy" type="checkbox" name="physique" value="" checked="checked"/>
+                  <label for="heavy">heavy</label>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM-->
+            <div class="block-toggle item-eyes-color">
+              <!-- EYES COLOURS -->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>EYES<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter">
+                <div class="clearfix">
+                  <input id="eyes_color_brown" type="checkbox" name="eyes_color" value="" checked="checked"/>
+                  <label for="eyes_color_brown">brown</label>
+                </div>
+                <div class="clearfix">
+                  <input id="eyes_color_green" type="checkbox" name="eyes_color" value="" checked="checked"/>
+                  <label for="eyes_color_green">green</label>
+                </div>
+                <div class="clearfix">
+                  <input id="eyes_color_gray" type="checkbox" name="eyes_color" value="" checked="checked"/>
+                  <label for="eyes_color_gray">gray</label>
+                </div>
+                <div class="clearfix">
+                  <input id="eyes_color_blue" type="checkbox" name="eyes_color" value="" checked="checked"/>
+                  <label for="eyes_color_blue">blue</label>
+                </div>
+                <div class="clearfix">
+                  <input id="eyes_color_dark_blue" type="checkbox" name="eyes_color" value="" checked="checked"/>
+                  <label for="eyes_color_dark_blue">dark blue</label>
+                </div>
+                <div class="clearfix">
+                  <input id="eyes_color_black" type="checkbox" name="eyes_color" value="" checked="checked"/>
+                  <label for="eyes_color_black">black</label>
+                </div>
+                <div class="clearfix">
+                  <input id="eyes_color_yellow" type="checkbox" name="eyes_color" value="" checked="checked"/>
+                  <label for="eyes_color_yellow">yellow</label>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM -->
+            <div class="block-toggle item-hair-color">
+              <!-- HAIR COLOR -->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>HAIR<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter">
+                <div class="clearfix">
+                  <input id="hair_color_blonde" type="checkbox" name="hair_color" value="" checked="checked"/>
+                  <label for="hair_color_blonde">blonde</label>
+                </div>
+                <div class="clearfix">
+                  <input id="hair_color_brown" type="checkbox" name="hair_color" value="" checked="checked"/>
+                  <label for="hair_color_brown">brown</label>
+                </div>
+                <div class="clearfix">
+                  <input id="hair_color_red" type="checkbox" name="hair_color" value="" checked="checked"/>
+                  <label for="hair_color_red">red</label>
+                </div>
+                <div class="clearfix">
+                  <input id="hair_color_brunette" type="checkbox" name="hair_color" value="" checked="checked"/>
+                  <label for="hair_color_brunette">brunette</label>
+                </div>
+                <div class="clearfix">
+                  <input id="hair_color_dyed" type="checkbox" name="hair_color" value="" checked="checked"/>
+                  <label for="hair_color_dyed">dyed</label>
+                </div>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <!-- ITEM -->
+            <div class="block-toggle item-hair-color">
+              <!-- HAIR COLOR -->
+              <div class="top_name_toggle_filter clearfix">
+                <h5>COUNTRY<i class="fa fa-angle-up" aria-hidden="true"></i><i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+              </div>
+              <div class="hide_content_toggle_filter milti-selector" id="search-country-selector">
+                <ul class="list-unstyled dropdown">
+                  <li><a class="clearfix clear item" data-value="">
+                      <input id="1" type="checkbox" name="countries" value=""/>
+                      <label for="1">Russia</label></a></li>
+                  <li><a class="clearfix clear item" data-value="">
+                      <input id="2" type="checkbox" name="countries" value=""/>
+                      <label for="2">Ukraine</label></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- *ITEM END* -->
+            <div class="clearfix"></div>
+            <div class="reset">
+              <button class="btn btn-white" id="search-reset" type="button">RESET ALL FILTERS</button>
+            </div>
+          </form>
+          <!-- ------------------- *FILTERS SECTION END* ------------------- -->
+        </div>
+        <div class="col-md-9">
+          <!-- ---------------------- RESULT SECTION ------------------------>
+          <div class="result-wrapper" id="search-girls-list">
+            <!-- ---------------------- ROW GIRLS LIST ------------------------>
+            <div class="row girl-list">
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/1.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">24 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Evgeniya</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100327</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="11111"><a class="clear" href="#">
+                    <div class="photo-block"><span class="online-label hvr-bounce-in">ONLINE</span><img src="../public/image/girls/2.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">22 years</span><span class="country_this_user">Nikolaev, Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Lovely angel</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100004</span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/3.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">29 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Ekaterina</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100315</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/4.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">20 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Diana</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100324</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/1.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">24 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Evgeniya</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100327</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="11111"><a class="clear" href="#">
+                    <div class="photo-block"><span class="online-label hvr-bounce-in">ONLINE</span><img src="../public/image/girls/2.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">22 years</span><span class="country_this_user">Nikolaev, Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Lovely angel</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100004</span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/3.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">29 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Ekaterina</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100315</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/4.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">20 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Diana</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100324</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/1.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">24 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Evgeniya</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100327</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="11111"><a class="clear" href="#">
+                    <div class="photo-block"><span class="online-label hvr-bounce-in">ONLINE</span><img src="../public/image/girls/2.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">22 years</span><span class="country_this_user">Nikolaev, Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Lovely angel</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100004</span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/3.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">29 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Ekaterina</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100315</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/4.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">20 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Diana</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100324</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/1.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">24 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Evgeniya</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100327</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="11111"><a class="clear" href="#">
+                    <div class="photo-block"><span class="online-label hvr-bounce-in">ONLINE</span><img src="../public/image/girls/2.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">22 years</span><span class="country_this_user">Nikolaev, Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Lovely angel</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100004</span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/3.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">29 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Ekaterina</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100315</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/4.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">20 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Diana</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100324</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/1.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">24 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Evgeniya</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100327</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="11111"><a class="clear" href="#">
+                    <div class="photo-block"><span class="online-label hvr-bounce-in">ONLINE</span><img src="../public/image/girls/2.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">22 years</span><span class="country_this_user">Nikolaev, Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Lovely angel</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100004</span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/3.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">29 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Ekaterina</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100315</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- -------------------------- ITEM ----------------------------------->
+              <div class="col-md-4 col-sm-6 col-xs-6">
+                <div class="item-user-profile-mini" data-user-id="100327"><a class="clear" href="#">
+                    <div class="photo-block"><img src="../public/image/girls/4.jpg" alt="Evgeniya"/></div>
+                    <p class="description-item-one"><span class="old_this_user">20 years</span><span class="country_this_user">Ukraine</span></p>
+                    <div class="clearfix"></div>
+                    <p class="name-user-item">Diana</p>
+                    <div class="id-descriprion-user-item"><span class="id-descript">ACCOUNT №100324</span><span class="has-webcam-label"></span></div></a>
+                  <div class="special-actions-buttons">
+                    <div class="button_item_user_block">
+                      <ul>
+                        <li class="disabled"><span class="ico ico-chat disabled">Chat now</span></li>
+                        <li><span class="ico ico-mail">Send Mail</span></li>
+                        <li><span class="ico ico-wink">Smile</span></li>
+                        <li><span class="ico ico-like">LIKE</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------------------- *ROW GIRLS LIST END* --------------------->
+            <!-- ----------- PAGINATIO ------------ -->
+            <div class="pager-wrapper">
+              <ul class="pagination pagination-sm pager">
+                <li class="active"><span class="current">1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+                <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+              </ul>
+            </div>
+            <!-- ---------- PAGINATIO END* ---------- -->
+          </div>
+          <!-- ------------------- *RESULT SECTION END* --------------------->
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------ MODALS ------------------------ -->
+    <!-- MODAL LOGIN FORM-->
+    <div class="modal fade login-modal" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="login_reg-wrapper row animated fadeIn">
+              <div class="login-form autoriz">
+                <h5>LOG IN</h5>
+                <div class="clearfix"></div>
+                <p class="title">Already have an account?<br>Log In it!</p>
+                <form class="site-form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <input class="form-control" type="password" name="pass" placeholder="Password" required="required"/><span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-default" type="submit">LOG IN</button><a class="link-default" data-dismiss="modal" onclick="setTimeout(function(){$(&quot;.forget-modal&quot;).modal(&quot;show&quot;)},700)">I FORGOT MY PASSWORD</a>
+                  <input type="hidden" name="fast" value="1"/>
+                </form>
+                <div class="bottom-toggle-block"><a onclick="login_reg_tooggle()">CREATE NEW ACCOUNT	</a></div>
+              </div>
+              <div class="login-form registretion hide">
+                <h5>
+                  <div class="online_count_label">FREE</div>REGISTRATION
+                </h5>
+                <div class="clearfix"></div>
+                <p class="title">Do you have an account?<br>No? Let�s create a new one!</p>
+                <form class="site-form">
+                  <input type="hidden" name="pass" value="WfDjrfUsIl"/>
+                  <input type="hidden" name="pass2" value="WfDjrfUsIl"/>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <input class="form-control" type="text" name="name" placeholder="Your name" required="required"/><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group">
+                        <input class="form-control" type="email" name="email" placeholder="Your email here" required="required"/><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-default" type="submit">CREATE AN ACCOUNT</button>
+                </form>
+                <div class="bottom-toggle-block"><a onclick="login_reg_tooggle()">LOG IN TO MY ACCOUNT</a></div>
+              </div>
+              <div class="bottom-toggle-block mobile"><a onclick="login_reg_tooggle()">CREATE NEW ACCOUNT</a></div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *MODAL LOGIN FORM END*-->
+    <!-- MODAL FORGET-->
+    <div class="modal fade forget-modal" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title">Reset your password</h4>
+          </div>
+          <div class="modal-body">
+            <p>Please, enter your registration e-mail and we will send you a link to reset your password and to set up new one</p>
+            <form class="site-form">
+              <div class="row">
+                <div class="col-md-12">
+                  <p>Your registration e-mail:</p>
+                  <div class="input-group">
+                    <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <button class="btn btn-default" type="submit">SEND</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- *MODAL FORGET END*-->
+    <!-- --------------------- *MODALS END* --------------------- -->
+    <!-- FOOTER-->
+    <footer>
+      <div class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-6">
+              <nav><a class="text-center" data-toggle="modal" data-target=".login-modal">Login</a><a class="text-center" href="/our-dating-site/license-terms/">License terms</a><a class="text-center" href="/our-dating-site/legal-terms/">Legal terms of site</a><a class="text-center" href="/our-dating-site/price-policy/">Price policy</a><a class="text-center" href="/agency">Cooperation</a></nav>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <nav><a class="text-center" href="/tender-bride-site/our-dating-website/">Our website</a><a class="text-center" href="/tender-bride-site/against-scam/">Against scam</a><a class="text-center" href="/tender-bride-site/contact-details/">Contact details</a></nav>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+              <nav><a class="text-center" href="/search/?online=1">Girls online</a><a class="text-center" href="/search/">Advanced search</a><a class="text-center" href="/search/?webcam=1">Ladies with webcam</a></nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 language text-center">
+              <p style="margin-top:20px;">Choose a language of site</p><a class="clear" href="https://ru.tenderbride.com">RU</a><a class="clear selected" href="https://tenderbride.com/">ENG</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid footer-second">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-6"><span>Tender Bride.com © 2014-2017</span></div>
+            <div class="col-md-6 col-xs-6">
+              <div class="pull-right cards-icon"><img src="../public/image/icon/cards-icon.png" alt="cards_icon"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- *FOOTER END*-->
+    <!-- ------------------- *SEARCH PAGE END* ------------------ -->
+    <!-- -------------------------------------------------------- -->
+    <!-- ------------------------SCRIPTS------------------------- -->
+    <!-- -------------------------------------------------------- -->
+    <!-- ***************** Bootstrap js include *****************-->
+    <script src="../public/(JS)EcmaScript/_lib/bootstrap.min.js"></script>
+    <!-- ****************** iCHeck js include *******************-->
+    <script src="../public/(JS)EcmaScript/_lib/icheck.min.js"></script>
+    <!-- ****************** UI SLIDER js include ****************-->
+    <script src="../public/(JS)EcmaScript/_lib/jquery-uiSlider.min.js"></script>
+    <!-- ****************** default TB EcmaScript *************** -->
+    <script src="../public/(JS)EcmaScript/search.js"></script>
+    <!-- -------------------------------------------------------- -->
+    <!-- ----------------------*SCRIPTS END*--------------------- -->
+    <!-- -------------------------------------------------------- -->
+  </body>
+</html>

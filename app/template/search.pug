@@ -1,0 +1,77 @@
+html
+	head
+		// -------------------------------------------------------- 
+		// --------------------------META-------------------------- 
+		// -------------------------------------------------------- 
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		title Online Dating Site for Men. Find Your Love - TenderBride.com
+		// -------------------------------------------------------- 
+		// ------------------------*META END*---------------------- 
+		// -------------------------------------------------------- 
+		// --------------------------STYLES------------------------ 
+		// -------------------------------------------------------- 
+		// ***************** font-awesome styles ****************** 
+		link(rel='stylesheet', href='../public/css/_lib/font-awesome.min.css')
+		// ******************** animate styles ******************** 
+		link(rel='stylesheet', href='../public/css/_lib/animate.min.css')
+		// ********************* JQ UI SLEDER ******************** 
+		link(rel='stylesheet', href='../public/css/_lib/jquery-ui.minSlider.css')
+		//  ***************** default TB styles ******************* 
+		link(rel='stylesheet', href='../public/css/main.css')
+		// -------------------------------------------------------- 
+		// -----------------------*STYLES END*--------------------- 
+		// -------------------------------------------------------- 
+		// ***************** Jquery plugin include **************** 
+		// -------------------------------------------------------- 
+		script(src='../public/(JS)EcmaScript/_lib/jquery-3.1.1.min.js')
+	body
+		// ---------------------- SEARCH PAGE --------------------- 
+
+		include include/header
+		// ---------------------- TITLE SECTION --------------------- 
+		.container
+			.row
+				h1.grey-mini SEARCH SINGLE WOMEN
+				h3.text-center Choose the best girl for you
+		// ------------------- *TITLE SECTION END* ------------------ 
+		.container.search-page.clearfix
+			// ---------------------- TOP SEARCH SECTION ------------- 
+			.row
+				.col-md-12
+					form.pull-right.form-inline.search-main-form(onsubmit='return false')
+						.input-group.search
+							input.form-control#s_id_lau(type='text', name='id', autocomplete='off' placeholder='Account №')
+							span.input-group-addon.fa.fa-search(aria-hidden='true')
+						.input-group.search
+							input.form-control#s_name_lau(type='text', name='name', autocomplete='off', placeholder='Nickname of girl')
+							span.input-group-addon.fa.fa-search(aria-hidden='true')
+					
+			// ------------------- *TOP SEARCH SECTION END* ----------- 
+			.row
+				.col-md-3
+					include include/search/filters
+				.col-md-9
+					include include/search/result_wrap
+		// ------------------------ MODALS ------------------------ 
+		include include/index/_modals
+		// --------------------- *MODALS END* --------------------- 
+		include include/footer
+
+		// ------------------- *SEARCH PAGE END* ------------------ 
+		// -------------------------------------------------------- 
+		// ------------------------SCRIPTS------------------------- 
+		// -------------------------------------------------------- 
+		// ***************** Bootstrap js include *****************
+		script(src='../public/(JS)EcmaScript/_lib/bootstrap.min.js')
+		// ****************** iCHeck js include *******************
+		script(src='../public/(JS)EcmaScript/_lib/icheck.min.js')
+		// ****************** UI SLIDER js include ****************
+		script(src='../public/(JS)EcmaScript/_lib/jquery-uiSlider.min.js')
+		// ****************** default TB EcmaScript *************** 
+		script(src='../public/(JS)EcmaScript/search.js')
+		// -------------------------------------------------------- 
+		// ----------------------*SCRIPTS END*--------------------- 
+		// -------------------------------------------------------- 

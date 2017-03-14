@@ -1,0 +1,20 @@
+//SLIDER BLOCK
+.container-fluid(style='position: relative;')
+	include LoginFormIndex
+	.carousel.slide.carousel-fade.slider_block(id='carousel-example-generic', data-ride='carousel')
+		//Указатели
+		ol.carousel-indicators
+			li.active(data-target='#carousel-example-generic', data-slide-to='0')
+			li(data-target='#carousel-example-generic', data-slide-to='1')
+			li(data-target='#carousel-example-generic', data-slide-to='2')
+		//Указатели end
+		//Контент слайда (slider wrap)
+		.carousel-inner
+			.item.active
+				img(src='../public/image/slider/banner_1.jpg', alt='Online dating')
+			.item
+				img(src='../public/image/slider/banner_2.jpg', alt='Online dating 2')
+			.item
+				img(src='../public/image/slider/banner_3.jpg', alt='Online dating 3')
+		//Контент слайда (slider wrap) end
+// *SLEDER BLOCK END*

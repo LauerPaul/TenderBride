@@ -1,0 +1,297 @@
+/* --------------- SEARCH PAGE --------------- */
+.container.search-page {
+	.input-group.search{
+		max-width: 200px;
+		margin-right: 20px;
+		float: left;
+		
+		&:last-child{
+			margin-right: 0px;
+		}
+
+		input.form-control{
+			padding-left: 18px;
+			padding-top: 1px;
+			padding-bottom: 1px;
+			font-size: 13px;
+			height: 32px;
+			box-shadow: none;
+			
+			&:focus ~ .input-group-addon{
+				color: #A5A5A5;
+			}
+		}
+		.input-group-addon {
+			padding: 1px 15px;
+			color: #ccc;
+		}
+	}
+	#search-girls-list{
+		.girl-list, .girls-list{
+			padding-top: 0px;
+			
+			@media (max-width: 1219px) and (min-width: 992px){
+				padding-left: 50px;
+				padding-right: 0px;
+				
+				.col-md-4{
+					width: 50%;
+				}
+			}
+			@media (max-width: 600px){
+				.col-xs-6 {
+					width: 100%;
+					max-width: 300px;
+					float: none;
+					margin: auto;
+				}
+			}
+		}
+		.search-not-found{
+			font-size: 16px;
+		}
+		.pager-wrapper{
+			@media (max-width: 1219px) and (min-width: 992px){
+				padding-left: 50px;
+			}
+		}
+	}
+	.search-main-form{
+		padding-top: 1px;
+		margin-bottom: 1em;
+		
+		@media (max-width: 991px) and (min-width: 461px) {
+			> .block-toggle#search-city-item{
+				display: none !important;
+			}
+		}
+		> .block-toggle {
+			border: 1px solid #d1d1d1;
+			max-width: 265px;
+			width: 100%;
+			position: relative;
+			margin-top: -1px;
+			overflow: hidden;
+			margin-bottom: -2px;
+			
+
+			@media (max-width: 991px) and (min-width: 461px) {
+				float: left;
+				margin-left: -1px;
+				max-width: 33.333%;
+			}
+			@media (max-width: 680px){
+				max-width: 50%;
+			}
+			@media (max-width: 460px){
+				max-width: 100%;
+			}
+			
+			> .top_name_toggle_filter{
+				cursor: pointer;
+				background: #f9f9f9 none repeat scroll 0 0;
+				border-bottom: 1px solid #dedede;
+				
+				@media (max-width: 991px) and (min-width: 461px) {
+					background: $default-color;
+					border-bottom: 0px;
+					max-height: 48px;
+					margin-top: -1px;
+				}
+
+				> h5 {
+					color: #b2b2b2;
+					font-family: "PTSans-Bold";
+					font-size: 14px;
+					letter-spacing: 1.5px;
+					margin: 17px 0;
+					padding-left: 30px;
+					padding-right: 60px;
+					
+					> i{
+						float: right;
+						margin-right: -30px;
+						font-size: 24px;
+						line-height: 11px;
+					}
+					> .fa-angle-up{
+						display: none;
+					}
+
+					@media (max-width: 991px) and (min-width: 461px) {
+						color: $white;
+						
+						> i{
+							display: none !important;
+						}
+					}
+					@media (max-width: 768px){
+						font-size: 12px;
+						padding-left: 25px;
+						margin: 13px 0;
+					}
+				}
+			}
+			> .hide_content_toggle_filter{
+				height: 0;
+				overflow: hidden;
+				transition: all 0.5s;
+				padding: 0px 30px;
+				margin-bottom: -1px;
+				opacity: 0.5;
+				
+				@media (max-width: 991px) and (min-width: 461px) {
+					height: 92px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					opacity: 1;
+					transition: none;
+					margin-bottom: 0px;
+				}
+
+				a{					
+					@media (max-width: 768px){
+						font-size: 13px;
+					}
+
+					label{
+						font-weight: normal;
+						cursor: pointer;
+					}
+				}
+				a.ui-state-default{
+					font-size: 8px;
+				    padding-top: 5px;
+				}
+			}
+			@media (max-width: 991px) and (min-width: 461px) {
+				>.hide_content_toggle_filter#search-country-selector{
+					height: 65px;
+				}
+			}
+		}
+		@media (max-width: 991px) and (min-width: 461px) {
+			.block-toggle.item-age, .block-toggle.item-height{
+				> .hide_content_toggle_filter{
+					height: 110px !important;
+					padding: 40px !important;
+				}			
+			}
+			.block-toggle.item-physique-color{
+				> .hide_content_toggle_filter{
+					height: 110px !important;
+				    padding: 12px 30px;
+				}	
+			}
+			.block-toggle.item-hair-color{
+				> .hide_content_toggle_filter{
+					height: 135px;
+				}
+			}
+			.block-toggle.item-eyes-color {
+				> .hide_content_toggle_filter{
+					height: 180px !important;
+					padding: 12px 30px;
+				}
+			}
+			.block-toggle.item-hair-color, .block-toggle.country-item {
+				> .hide_content_toggle_filter{
+					height: 180px !important;
+					padding: 12px 30px;
+				}
+			}
+		}
+		@media (max-width: 680px) and (min-width: 461px) {
+			.block-toggle.item-age {
+				> .hide_content_toggle_filter{
+					height: 92px !important;
+				}			
+			}
+		}
+		.block-toggle.open{
+			.top_name_toggle_filter {
+				background: $default-color;
+				color: #b2b2b2;
+				margin-top: -1px;
+				border-bottom: none;
+				transition: all 0.2s;
+				
+				&:hover{
+					background: #7f62a0;
+				}
+
+				h5 {
+					color: #ffffff;
+					
+					> .fa-angle-down{
+						display: none;	
+					}
+					> .fa-angle-up{
+						display: block;
+					}
+				}
+			}
+			> .hide_content_toggle_filter{
+				height: 92px;
+				padding: 10px 30px;
+				margin-bottom: 0;
+				opacity: 1;
+				
+				@media (max-width: 1219px) and (min-width: 992px){
+					padding: 10px 25px;
+				}		
+			}
+			>.hide_content_toggle_filter#search-country-selector{
+				height: 65px;
+			}
+			>.hide_content_toggle_filter#search-city-selector{
+				height: auto;
+				
+				ul{
+					margin: 0px;
+				}
+			}
+		}
+		.block-toggle.open.item-age, .block-toggle.open.item-height{
+			> .hide_content_toggle_filter{
+				height: 75px;
+				padding: 20px 40px;
+				margin-bottom: 0;
+				opacity: 1;
+			}
+		}
+		.block-toggle.item-physique-color.open{
+			> .hide_content_toggle_filter{
+				height: 110px;
+				padding: 12px 30px;
+			}
+		}
+		.block-toggle.item-hair-color.open{
+			> .hide_content_toggle_filter{
+				height: 135px;
+				padding: 12px 30px;
+			}
+		}
+		.block-toggle.item-eyes-color.open{
+			> .hide_content_toggle_filter{
+				height: 180px;
+				padding: 12px 30px;
+			}
+		}
+
+		.reset{
+			margin-top: 20px;
+			
+			@media (max-width: 991px){
+				text-align: right;
+				margin-bottom: 50px;
+			}
+
+			button{
+				width: 100%;
+				max-width: 263px;	
+			}
+		}
+	}
+}
+/* ------------ *SEARCH PAGE END* ------------ */

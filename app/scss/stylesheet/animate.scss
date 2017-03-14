@@ -1,0 +1,37 @@
+/* -------------Animation------------- */
+@-webkit-keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+/* -------------*Animation end*------------- */
+/* -------------fade on slider------------- */
+.carousel-fade {
+	.carousel-inner {
+		.item {
+			transition-property: opacity;
+		}   
+		.item,
+		.active.left,
+		.active.right {
+			opacity: 0;
+		}
+		.active,
+		.next.left,
+		.prev.right {
+			opacity: 1;
+		}
+		.next,
+		.prev,
+		.active.left,
+		.active.right {
+			left: 0;
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.carousel-control {
+		z-index: 2;
+	}
+}
+/* -------------*fade on slider end*------------- */

@@ -1,0 +1,417 @@
+/* ---------------- USER PANEL --------------- */
+.container-fluid#user-panel{
+	background: #fff none repeat scroll 0 0;
+	bottom: 0;
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.36);
+	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.36);
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.36);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	/* display: none; */
+	
+	.lable-toggle-userpanel {
+		background: darken($default-color, 10%) url(../image/icon/user-panel-icon.png) no-repeat scroll center center;
+		height: 75px;
+		position: absolute;
+		right: -13px;
+		top: 0;
+		width: 13px;
+		cursor: pointer;
+	}
+
+	.inner-wrapper{
+		height: 100%;
+	}
+
+	.inner{
+		padding: 0px;
+		height: 100%;
+		
+		.top-block-user-panel {
+			background: #8e72af;
+			padding: 12px 20px;
+			position: relative;
+			
+			.img-profile-userpanel {
+				float: left;
+				height: 53px;
+				margin-left: 0px;
+				margin-top: -2px;
+				overflow: hidden;
+				position: relative;
+				width: 39px;
+				margin-right: -2px;
+				
+				img{
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+
+			.block-name-info-userpanel {
+				float: left;
+				position: relative;
+				max-width: calc(100% - 40px);
+				
+				a{
+					color: $white;
+					display: block;
+					font-family: "PTSans-Bold";
+					margin-top: 21px;
+					padding-left: 12px;
+					text-decoration: underline;
+					font-size: 16px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+				}
+			}
+		}
+		.wrapp-list-item-userpanel {
+			padding-top: 25px;
+			
+			.item {
+				font-family: "PTSans-Bold";
+				background: $white;
+				border-bottom: 1px solid #F3F3F3;
+				cursor: pointer;
+				padding: 15px 32px;
+				position: relative;
+				
+				&:hover{
+					background: #F3F3F3;
+				}
+				
+				.ico-views::after {
+					background: rgba(0, 0, 0, 0) url(../image/icon/icon_userpanel.png) no-repeat scroll left -39px;
+				}
+				.ico-wink::after {
+					background: rgba(0, 0, 0, 0) url(../image/icon/wink.png) no-repeat scroll;
+				}
+				.ico-like::after {
+					background: rgba(0, 0, 0, 0) url(../image/icon/icon_userpanel.png) no-repeat scroll left -115px;
+				}
+				.ico-fav::after {
+    				background: rgba(0, 0, 0, 0) url(../image/icon/icon_userpanel.png) no-repeat scroll left -152px;
+    			}
+    			.ico-mess::after{
+    				background: rgba(0, 0, 0, 0) url(../image/icon/icon_userpanel.png) no-repeat scroll left -192px;
+    			}
+				.ico {
+					
+					&::after {
+						content: "";
+						height: 16px;
+						width: 16px;
+						position: absolute;
+						left: 10px;
+						top: 17px;
+					}
+
+					.count-item-userpanel {
+						display: inline-block;
+						position: absolute;
+						right: 15px;
+						color: #b3b3b3;
+						font-family: "PTSans-Regular";			
+					}
+
+					.new{
+						background: $default-color;
+						border-radius: 50%;
+						color: $white;
+						font-family: "PTSans-Regular";
+						font-size: 11px;
+						height: 20px;
+						min-width: 20px;
+						line-height: 10px;
+						padding-top: 5px;
+						position: absolute;
+						right: -10px;
+						text-align: center;
+						top: 0px;
+						vertical-align: middle;
+						-webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.36);
+						-moz-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.36);
+						box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.36);
+						
+						&::before{
+							background: rgba(0, 0, 0, 0) url(../image/icon/dot-item.png) no-repeat scroll center center;
+							bottom: 0;
+							content: "";
+							height: 4px;
+							left: 0;
+							position: absolute;
+							width: 6px;
+						}
+					}
+				}
+				.popup {
+					position: fixed;
+					width: 300px;
+					background: white;
+					top: 0;
+					left: 79px;
+					height: 99vh;
+					bottom: 0;
+					z-index: 10000;
+					display: none;
+					
+					.title{
+						z-index: 10000;
+						background: #555555;
+						color: #ffffff;
+						font-family: "PTSans-Bold";
+						font-weight: normal;
+						font-size: 15px;
+						width: calc(100% - 20px);
+						float: left;
+						padding: 10px;
+						position: relative;
+					}
+
+					.reset-new {
+						display: inline-block;
+						padding-left: 30px;
+						font-family: 'PTSans-Regular';
+						font-size: 14px;
+						text-decoration: underline;
+						font-weight: normal;
+						opacity: 0.7;
+						text-align: right;
+						float: right;
+						margin-right: 20px;
+						margin-top: 10px;
+						line-height: 20px;
+						cursor: pointer;
+					}
+				}
+			}
+			.item-openchat {
+				color: #f2f2f2;
+				text-align: center;
+				padding: 5px;
+				cursor: pointer;
+				border-radius: 3px;
+				box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.24);
+				max-width: 194px;
+				box-sizing: border-box;
+				margin: 0 auto;
+				margin-top: 14px;
+				background: #3ba71d;
+				font-family: 'PTSans-Bold';
+				animation: 5s linear 0s normal none infinite running pulsate;
+				text-shadow: 0 0px rgba(0, 0, 0, 0.5);
+				
+				&:hover{
+				}
+			}
+			.item.item-balance {
+				color: #3ba71d;
+				
+				.count-item-userpanel {
+					font-family: "PTSans-Bold";
+					color: #3ba71d;	
+				}
+
+				.ico-balance::after {
+					background: rgba(0, 0, 0, 0) url(../image/icon/icon_userpanel.png) no-repeat scroll left top;
+				}			
+			}
+		}
+		.block-bottom-userpanel {
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			right: 0;
+			
+			.more-option-userpanel {
+				background: #f9f9f9;
+				cursor: pointer;
+				display: inline-block;
+				float: left;
+				font-family: "PTSans-Bold";
+				font-size: 12px;
+				height: 72px;
+				padding-top: 42px;
+				position: relative;
+				text-align: center;
+				width: 40%;
+				
+				&::after {
+					background: rgba(0, 0, 0, 0) url(../image/icon/bottom_userpanel.png) no-repeat scroll left top;
+					content: "";
+					height: 10px;
+					left: -50%;
+					margin: 0 auto;
+					position: absolute;
+					right: -50%;
+					top: 27px;
+					width: 22px;
+				}
+
+				&:hover{
+					background: $default-color;
+					color: $white;
+					text-decoration: underline;
+					border-color: $default-color;
+				
+					&:active{
+						webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+						box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+					}
+					
+					&::after{
+					    background-position: left bottom;
+					    top: 22px;
+					}
+				}
+
+				.setup-menu-more-userpanel-hide {
+					bottom: 72px;
+					left: 0;
+					position: absolute;
+					width: 100%;
+					display: none;
+					margin-bottom: 0px;
+					
+					li {
+						background: $default-color;
+						border-bottom: 1px solid darken($default-color, 3%);
+						clear: both;
+						color: #b29ace;
+						font-family: "PTSans-Bold";
+						font-size: 12px;
+						font-weight: normal;
+						height: 36px;
+						width: 100%;
+						
+						a {
+							color: inherit;
+							display: table-cell;
+							float: left;
+							font-size: inherit;
+							font-weight: inherit;
+							max-height: 100%;
+							outline: medium none;
+							padding-bottom: 8px;
+							padding-top: 7px;
+							text-align: center;
+							text-decoration: none;
+							vertical-align: middle;
+							width: 100%;
+							line-height: 18px;
+						}
+
+						form{ 
+							height: 100%;
+							
+							button {
+								margin: 0px;
+								padding: 0px;
+								height: 100%;
+								width: 100%;
+								outline: none;
+								background: transparent;
+								border: none;
+							}
+						}
+
+						&:hover {
+							color: #ffffff;
+							background: #7B609A;
+							
+							&:active{
+								webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+								box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+							}
+						}
+					}
+
+					li.edit_profile {
+						display: none;
+					}
+				}
+			}
+
+			.more-option-userpanel.open{
+				webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+				box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+				background: darken($default-color, 4%);
+				color: $white;
+				
+				&:hover{
+					background: darken($default-color, 4%);
+					color: $white;
+					text-decoration: underline;
+					border-color: darken($default-color, 4%);
+					
+				}
+				&::after{
+					background-position: left bottom;
+					top: 22px;
+				}
+			}
+				
+			.profile-edit-option-userpanel {
+				background: #f9f9f9;
+				display: inline-block;
+				float: left;
+				font-family: "PTSans-Bold";
+				font-size: 12px;
+				height: 72px;
+				padding-top: 42px;
+				position: relative;
+				text-align: center;
+				width: 60%;
+				border-left: 1px solid #dedede;
+				
+				&::after {
+					background: rgba(0, 0, 0, 0) url(../image/icon/bottom_userpanel.png) no-repeat scroll right top;
+					content: "";
+					height: 22px;
+					left: -50%;
+					margin: 0 auto;
+					position: absolute;
+					right: -50%;
+					top: 17px;
+					width: 22px;
+				}
+				&:hover{
+					background: $default-color;
+					color: $white;
+					text-decoration: underline;
+					border-color: $default-color;
+					
+					&:active{
+						webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+						box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.25);
+					}
+					
+					&::after{
+					    background-position: right bottom;
+					}
+				}
+			}
+		}
+	}
+}
+.container-fluid#user-panel.full{
+	width: 220px;
+	.wrapp-list-item-userpanel {
+		
+		.item {
+
+			.popup {
+				left: 233px;
+			}
+		}
+	}
+}
+.container-fluid#user-panel.mini{
+	
+}
+/* ------------- *USER PANEL END* ------------ */

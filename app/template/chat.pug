@@ -1,0 +1,48 @@
+html
+	head
+		// --------------------------------------------------------
+		// --------------------------META--------------------------
+		// --------------------------------------------------------
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		<meta name="yandex-verification" content="76dd353e7e89c7b3">
+
+		title Online Dating Site for Men. Find Your Love - TenderBride.com
+		// --------------------------------------------------------
+		// ------------------------*META END*----------------------
+		// --------------------------------------------------------
+
+		// --------------------------STYLES------------------------
+		// --------------------------------------------------------
+		// ***************** font-awesome styles ******************
+		link(rel='stylesheet', href='../public/css/_lib/font-awesome.min.css')
+		// ******************** animate styles ********************
+		link(rel='stylesheet', href='../public/css/_lib/animate.min.css')
+		//  *************** default chat TB styles *****************
+		link(rel='stylesheet', href='../public/css/main-chat.css')
+		// --------------------------------------------------------
+		// -----------------------*STYLES END*---------------------
+		// --------------------------------------------------------
+		// ***************** Jquery plugin include ****************
+		// --------------------------------------------------------
+		script(src='../public/(JS)EcmaScript/_lib/jquery-3.1.1.min.js')
+
+	body
+		.container-fluid.body.newchat-wrapper
+
+			include include/chat/left-column
+			.newchat-main-wrapper#newchat-main-wrapper
+				include include/chat/center
+				include include/chat/right-column
+
+		// --------------------------------------------------------
+		// ------------------------SCRIPTS-------------------------
+		// --------------------------------------------------------
+		// ***************** Bootstrap js include *****************
+		script(src='../public/(JS)EcmaScript/_lib/bootstrap.min.js')
+		// ********************* chat TB EcmaScript ***************
+		script(src='../public/(JS)EcmaScript/chatPage.main.js')
+		// --------------------------------------------------------
+		// ----------------------*SCRIPTS END*---------------------
+		// --------------------------------------------------------

@@ -1,0 +1,89 @@
+// ---------------------------------------------------------------------------------------------------
+// ---------------------------------------- Right column ---------------------------------------------
+// ---------------------------------------------------------------------------------------------------
+.col-md-3.right-col.newchat-contacts-list.newchat-users-list#newchat-contacts-list(data-limit='Infinity', data-pages='')
+	.navbar.nav-title
+		.tumbler
+			.newchat-header
+		#my-credits.credits
+			span.text
+				span#balance(data-balance='27.00') 27.00
+				| credits 
+			.danger
+				i.fa.fa-exclamation-triangle(aria-hidden='true')
+					.hover Hey, man! Too low credits. 
+						br
+						|Go and 
+						a(href='/buy/') get more
+			.warning
+				i.fa.fa-exclamation-triangle(aria-hidden='true')
+					.hover Soon you run out of credits. 
+						br
+						a(href='/buy/') Get more credits
+						|for future chat
+			a.btn.more(href='/buy/')
+				span Add more credits
+		.checker.sound-on.animated#newchat-sound-checker
+			div
+				.off
+				.on
+		.clearfix
+	h4.title 
+		span.mini-hide My talk-list: 
+		span.cnt(data-cnt='2') 2
+		span.mini users
+		span.new New messages!
+	#sidebar-menu.items
+		.item.has-webcam.webcam-online.item-online.item-opened(data-id='100172', data-user-id='100172')
+			.inner
+				.photo
+					img(src='../public/image/girls/1_small.jpg')
+				.name Julia
+				.id 
+					span.mini-hide ACCOUNT 
+					|№100172
+				.webcam
+				.chat
+					span
+				.video-chat
+					span
+				.close
+					i.fa.fa-window-close(aria-hidden='true')
+		.item(data-id='', data-user-id='')
+			.inner
+				.photo
+					img(src='../public/image/girls/2_small.jpg')
+				.name Lava_Love
+				.id 
+					span.mini-hide ACCOUNT 
+					|№100172
+				.webcam
+				.chat
+					span
+				.video-chat
+					span
+				.close
+					i.fa.fa-window-close(aria-hidden='true')
+		.item.has-webcam(data-id='', data-user-id='')
+			.inner
+				.photo
+					img(src='../public/image/girls/3_small.jpg')
+				.name MaryMary
+				.id 
+					span.mini-hide ACCOUNT 
+					|№100172
+				.webcam
+				.chat
+					span
+				.video-chat
+					span
+				.close
+					i.fa.fa-window-close(aria-hidden='true')
+	.newchat-pager
+		.text-center
+	a#menu-toggle-right
+				i.fa.fa-angle-double-left
+				i.fa.fa-angle-double-right
+// ---------------------------------------------------------------------------------------------------
+// ------------------------------------- *Right column END* ------------------------------------------
+// ---------------------------------------------------------------------------------------------------

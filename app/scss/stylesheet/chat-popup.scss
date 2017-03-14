@@ -1,0 +1,319 @@
+/* ------------- CHAT POPUP ------------- */
+#chat-popup {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	
+	@media (max-width: 640px){
+		bottom: 10px;
+		right: 0px;
+	}
+	
+	.wrapper-popup-chat-now{
+		background: $white;
+		box-shadow: 0 2px 19px 3px rgba(0, 0, 0, 0.21);
+		overflow: hidden;
+		position: relative;
+		min-width: 255px;
+		max-width: 255px;
+		
+		@media (max-width: 790px){
+			min-width: 230px;
+			max-width: 230px;
+		}
+		@media (max-width: 640px){
+			max-width: 240px;			
+		}
+		
+		.title {
+			background: #8e72af none repeat scroll 0 0;
+			color: $white;
+			font-size: 16px;
+			font-family: "PTSans-Bold";
+			padding: 14px 75px 18px 30px;
+			position: relative;
+				
+			@media (max-width: 790px){
+				padding: 10px 75px 13px 18px;
+			}
+			
+			@media (max-width: 640px){
+				width: 300px;
+				font-size: 13px;	
+				padding-bottom: 12px;
+			}
+			
+			span {
+				font-family: "PTSans-Regular";
+				font-size: 12px;
+				display: block;
+				clear: both;
+				
+				@media (max-width: 640px){
+					display: inline;
+					margin-left: 5px
+				}
+			}
+		}
+		.close {
+			color: $white;
+			font-size: 11px;
+			position: absolute;
+			font-weight: normal;
+			right: 40px;
+			top: 20px;
+			cursor: pointer;
+			opacity: 0.7;
+			z-index: 1;
+			
+			&:hover{
+				opacity: 1;
+			}
+			
+			&::before {
+				content: "__";
+				position: absolute;
+				right: -12px;
+				top: -2px;
+			}
+			
+			@media (max-width: 640px){
+				top: 11px;
+				right: 35px;
+			}
+		}
+		
+		.content{
+			padding: 25px 30px;
+			
+			@media (max-width: 790px) and (min-width: 641px){
+				padding: 10px 20px 15px;
+			}
+			
+			@media (max-width: 640px){
+				padding: 10px 10px 15px;
+			}
+			
+			.name {
+				color: #8d72b1;
+				font-family: "PTSans-Bold";
+				font-size: 18px;
+				line-height: 20px;
+				word-wrap: normal;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+				@media (max-width: 640px){
+					position: absolute;
+					left: 87px;
+					font-size: 14px;
+					width: 130px;
+				}
+			}
+			.age {
+				color: #b2b2b2;
+				font-size: 12px;
+				line-height: 20px;
+				margin-bottom: 15px;
+				
+				@media (max-width: 640px){
+					margin-bottom: 5px;
+					position: absolute;
+					left: 88px;
+					margin-top: 18px;
+				}
+			}
+			@media (max-width: 640px){
+				.photo{
+					float: left;
+				}
+			}
+			.special-photo{
+				height: 139px;
+				width: 100px;
+				overflow: hidden;
+				position: relative;
+				
+				@media (max-width: 790px) and (min-width: 640px){
+					height: 110px;
+					width: 70px;
+				}
+
+				@media (max-width: 640px){
+					height: 102px;
+					width: 68px;
+					float: left;
+					margin-right: 10px;
+				}
+				
+				img{
+						width: auto;
+						height: 100%;
+						position: absolute;
+						top: -50%;
+						bottom: -50%;
+						margin: auto;
+						left: -50%;
+						right: -50%;
+				}
+			}
+			.online-label {
+				right: 6px;
+				top: 6px;
+				transition: all 0.7s;
+				opacity: 1;
+			}
+			.has-webcam-label{
+				float: right;
+
+				@media (max-width: 640px){
+					margin-bottom: 10px;
+					margin-top: 8px;
+					width: 60px;
+					background-size: cover;
+					height: 9px;
+					margin-right: 11px;
+				}
+			}
+		}
+		
+		span.has-webcam-label{
+			@media (max-width: 790px){
+				margin-right: 20px;
+			}
+		}
+		
+		.say{
+			margin: 15px 0;
+			letter-spacing: -0.1px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+
+			@media (max-width: 640px){
+				margin-top: 45px;
+				margin-right: 7px;
+				width: calc(100% - 85px);
+			}
+		}
+		button.btn{
+			width: 100%;
+			margin-top: 5px;
+
+			@media (max-width: 640px){
+				float: right;
+				width: auto;
+				margin-bottom: 10px;
+				padding: 7px 25px;
+				margin-top: 0px;
+				margin-right: 5px;
+			}
+		}
+	}
+	
+	.lable-popup-hide-cont-message {
+		padding: 23px 37px;
+		background: #fff;
+		-webkit-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.25);
+		box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.25);
+		
+		@media (max-width: 790px){
+			padding: 10px 20px;
+		}
+		@media (max-width: 640px){
+			padding: 2px 3px 2px 0;
+			border-radius: 0px 25px 25px 0px;
+			border: none;
+		}
+		
+		a {
+			padding: 15px 32px;
+			
+			@media (max-width: 790px){
+				padding: 10px 25px;
+				font-size: 10px;
+			}
+			span.invitation {
+				@include transition(all 0.3s);
+			}
+			@media (max-width: 640px){
+				padding: 10px 15px;
+				border-radius: 0px 25px 25px 0px;
+				
+				span.invitation {
+					width: 0px;
+					display: inline-block;
+					overflow: hidden;
+					line-height: 8.5px;
+				}
+				
+				&:hover{
+					span.invitation{
+						width: 63px;
+					}
+				}
+			}
+			
+			i.fa{
+				margin-right: 8px;
+				font-size: 16px;
+				
+				@media (min-width: 641px){
+					display: none;
+				}
+			}
+		}
+	}
+}
+#chat-popup.open {
+	.lable-popup-hide-cont-message {
+		display: none;
+	}
+}
+#chat-popup.minimize {
+	.wrapper-popup-chat-now {
+		display: none;
+	}
+}
+.index_page #chat-popup{
+	right: auto !important;
+	left: 20px;
+	
+	@media (max-width: 640px){
+		left: 0px;
+	}
+}
+.online-label {
+	background: #3aa71d;
+	color: $white;
+	font-family: "PTSans-Bold";
+	font-size: 10px;
+	letter-spacing: 0.3px;
+	padding: 0 6px;
+	position: absolute;
+	right: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	top: 15px;
+	animation: 1.5s linear 0s normal none infinite running pulsate;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+}
+.has-webcam-label {
+	height: 11px;
+	width: 76px;
+	background: url(../image/icon/web.png) no-repeat scroll center bottom;
+	float: left;
+	font-family: "PTSans-Bold";
+	font-weight: normal;
+	letter-spacing: -1.2px;
+	padding-left: 24px;
+	margin-top: 6px;
+}
+.has-webcam-label.active {
+	background-position: center top;
+}
+/* -------------*CHAT POPUP END*------------- */

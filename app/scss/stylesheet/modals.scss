@@ -1,0 +1,44 @@
+/* -------------MODAL FORGET PASS------------- */
+	.modal.lost-pass-form{
+		form{
+			max-width: 330px;
+			margin: auto;
+			margin-top: 20px;
+			
+			p{
+				font-size: 16px;
+			}
+			
+			button{
+				width: 100%;
+				margin-bottom: 10px;
+			}
+		}
+	}
+/* -------------*MODAL FORGET PASS END*------------- */
+/* --------------- MODAL LOGIN --------------- */	
+.login-modal{
+	.modal-dialog{
+		@media (min-width: 768px){
+			width: 385px;
+		}
+		
+		.modal-body{
+			padding: 0px;
+	
+			.login_reg-wrapper{
+				position: static;
+				margin: 0px;
+				width: 100%;
+			}
+		}
+	}
+}
+/* -------------*MODAL LOGIN END*------------- */
+/* ------------------------------------------- */
+/* -----------------MODAL AGREE--------------- */
+#license-agreement .modal-body{
+	max-height: 80vh;
+	overflow: auto;
+}
+/* -------------*MODAL AGREE END*------------- */

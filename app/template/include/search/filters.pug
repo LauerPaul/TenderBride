@@ -1,0 +1,186 @@
+// ---------------------- FILTERS SECTION ---------------------- 
+form.search-main-form(onsubmit='return false')
+	input(type='hidden', name='type', value='W')
+	// ITEM 
+	.block-toggle.open.item-newcomer
+		// NEW GIRLS 
+		.top_name_toggle_filter.clearfix
+			h5 NEW GIRLS
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter
+			.one-selector
+				input(name='new', value='0', type='hidden')
+				.clearfix
+					a.clear(data-value='1')
+						input.flat#new_girl(type='radio', value='1', data-value='1', name='new')
+						label(for='new_girl') Show only new Girls
+				.clearfix
+					a.clear.active(data-value='0')
+						input.flat#all-girls(type='radio', value='0', data-value='1', name='new', checked)
+						label(for='all-girls') Show all Girls
+	// *ITEM END* 
+	// ITEM 
+	.block-toggle.open.item-online
+		// GIRLS ONLINE
+		.top_name_toggle_filter.clearfix
+			h5 GIRLS ONLINE
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter
+			.one-selector
+				input(name='online', value='', type='hidden')
+				.clearfix
+					a.clear(data-value='1')
+						input#online-girls(type='radio', value='1', name='online')
+						label(for='online-girls') Girls Online
+				.clearfix
+					a.clear.active(data-value='0')
+						input#all-online-offline(type='radio', value='0', name='online', checked)
+						label(for='all-online-offline') Show all Girls
+	// *ITEM END* 
+	// ITEM 
+	.block-toggle.open.item-webcam#webcam_i
+		// WEBCAM
+		.top_name_toggle_filter.clearfix
+			h5 WEBCAM
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter
+			.one-selector
+				input(name='webcam', value='', type='hidden')
+				.clearfix
+					a.clear(data-value='1')
+						input#Webcam(type='radio', value='1', name='webcam')
+						label(for='Webcam') Girls with Webcam
+				.clearfix
+					a.clear.active(data-value='0')
+						input#all-Webcam(type='radio', value='0', name='webcam', checked)
+						<label for='all-Webcam'>Show all Girls</label>
+	// *ITEM END* 
+	// ITEM 
+	.block-toggle.open.item-age
+		// AGE 
+		.top_name_toggle_filter.clearfix
+			h5 AGE
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter.item-age
+			.slider(data-min='18', data-value-min='18', data-max='49' data-value-max='49', data-name='age')
+				.ui-slider
+					a.ui-slider-handle.l_inp
+					a.ui-slider-handle.r_inp 
+	// *ITEM END* 
+	// ITEM 
+	.block-toggle.item-height
+		// HEIGHT 
+		.top_name_toggle_filter.clearfix
+			h5 HEIGHT
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter.item-age
+			.slider(data-min='0', data-value-min='0', data-max='180' data-value-max='180', data-name='height')
+				.ui-slider
+					a.ui-slider-handle.l_inp
+					a.ui-slider-handle.r_inp 
+	// *ITEM END* 
+	// ITEM 
+	.block-toggle.item-physique-color.open
+		// PHYSIQUE 
+		.top_name_toggle_filter.clearfix
+			h5 BODY
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter
+			.clearfix
+				input#lean(type="checkbox", name="physique", value="", checked)
+				label(for="lean") lean
+			.clearfix
+				input#sportive(type="checkbox", name="physique", value="", checked)
+				label(for="sportive") sportive
+			.clearfix
+				input#normal(type="checkbox", name="physique", value="", checked)
+				label(for="normal") normal
+			.clearfix
+				input#heavy(type="checkbox", name="physique", value="", checked)
+				label(for="heavy") heavy
+	// *ITEM END* 
+	// ITEM
+	.block-toggle.item-eyes-color
+		// EYES COLOURS 
+		.top_name_toggle_filter.clearfix
+			h5
+				|EYES
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter
+			.clearfix
+				input#eyes_color_brown(type='checkbox', name='eyes_color', value='', checked)
+				label(for='eyes_color_brown') brown
+			.clearfix
+				input#eyes_color_green(type='checkbox', name='eyes_color', value='', checked)
+				label(for='eyes_color_green') green
+			.clearfix
+				input#eyes_color_gray(type='checkbox', name='eyes_color', value='', checked)
+				label(for='eyes_color_gray') gray
+			.clearfix
+				input#eyes_color_blue(type='checkbox', name='eyes_color', value='', checked)
+				label(for='eyes_color_blue') blue
+			.clearfix
+				input#eyes_color_dark_blue(type='checkbox', name='eyes_color', value='', checked)
+				label(for='eyes_color_dark_blue') dark blue
+			.clearfix
+				input#eyes_color_black(type='checkbox', name='eyes_color', value='', checked)
+				label(for='eyes_color_black') black
+			.clearfix
+				input#eyes_color_yellow(type='checkbox', name='eyes_color', value='', checked)
+				label(for='eyes_color_yellow') yellow
+	// *ITEM END* 
+	// ITEM 
+	.block-toggle.item-hair-color
+		// HAIR COLOR 
+		.top_name_toggle_filter.clearfix
+			h5
+				|HAIR
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter
+			.clearfix
+				input#hair_color_blonde(type='checkbox', name='hair_color', value='', checked)
+				label(for='hair_color_blonde') blonde
+			.clearfix
+				input#hair_color_brown(type='checkbox', name='hair_color', value='', checked)
+				label(for='hair_color_brown') brown
+			.clearfix
+				input#hair_color_red(type='checkbox', name='hair_color', value='', checked)
+				label(for='hair_color_red') red
+			.clearfix
+				input#hair_color_brunette(type='checkbox', name='hair_color', value='', checked)
+				label(for='hair_color_brunette') brunette
+			.clearfix
+				input#hair_color_dyed(type='checkbox', name='hair_color', value='', checked)
+				label(for='hair_color_dyed') dyed
+	// *ITEM END* 
+	// ITEM 
+	.block-toggle.item-hair-color
+		// HAIR COLOR 
+		.top_name_toggle_filter.clearfix
+			h5
+				|COUNTRY
+				i.fa.fa-angle-up(aria-hidden='true')
+				i.fa.fa-angle-down(aria-hidden='true')
+		.hide_content_toggle_filter.milti-selector#search-country-selector
+			ul.list-unstyled.dropdown
+				li
+					a.clearfix.clear.item(data-value='')
+						input#1(type='checkbox', name='countries', value='')
+						label(for='1') Russia
+				li
+					a.clearfix.clear.item(data-value='')
+						input#2(type='checkbox', name='countries', value='')
+						label(for='2') Ukraine
+	// *ITEM END* 
+	.clearfix
+	.reset
+		button.btn.btn-white#search-reset(type='button') RESET ALL FILTERS
+// ------------------- *FILTERS SECTION END* ------------------- 

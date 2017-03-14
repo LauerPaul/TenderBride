@@ -1,0 +1,12 @@
+// Pagination
+
+@mixin pagination-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  > li {
+    > a,
+    > span {
+      font-size: $font-size;
+      line-height: $line-height;
+      border-radius: 0;
+    }
+  }
+}

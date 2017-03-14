@@ -1,0 +1,84 @@
+// MODAL LOGIN FORM
+.modal.fade.login-modal(role='dialog', aria-hidden='true')
+	.modal-dialog
+		.modal-content
+			.modal-body
+				.login_reg-wrapper.row.animated.fadeIn
+					.login-form.autoriz
+						h5 LOG IN
+						.clearfix
+						p.title Already have an account?<br>Log In it!
+						form.site-form
+
+							.row
+								.col-md-12
+									.input-group
+										input.form-control(type='email', name='email', placeholder='E-mail', required)
+										span.input-group-addon
+											span.glyphicon.glyphicon-envelope
+							.row
+								.col-md-12
+									.input-group
+										input.form-control(type='password', name='pass', placeholder='Password', required)
+										span.input-group-addon
+											span.glyphicon.glyphicon-lock
+
+							button.btn.btn-default(type='submit') LOG IN
+							a.link-default(data-dismiss='modal', onclick='setTimeout(function(){$(".forget-modal").modal("show")},700)') I FORGOT MY PASSWORD
+							input(type='hidden', name='fast', value='1')
+						.bottom-toggle-block
+							a(onclick='login_reg_tooggle()') CREATE NEW ACCOUNT	
+
+					.login-form.registretion.hide
+						h5
+							.online_count_label FREE
+							|REGISTRATION
+						.clearfix
+						p.title Do you have an account?<br>No? Let’s create a new one!
+						form.site-form
+							input(type='hidden', name='pass', value='WfDjrfUsIl')
+							input(type='hidden', name='pass2', value='WfDjrfUsIl')
+							.row
+								.col-md-12
+									.input-group
+										input.form-control(type='text', name='name', placeholder='Your name', required)
+										span.input-group-addon
+											span.glyphicon.glyphicon-user
+							.row
+								.col-md-12
+									.input-group
+										input.form-control(type='email', name='email', placeholder='Your email here', required)
+										span.input-group-addon
+											span.glyphicon.glyphicon-envelope
+
+							button.btn.btn-default(type='submit') CREATE AN ACCOUNT
+						.bottom-toggle-block
+							a(onclick='login_reg_tooggle()') LOG IN TO MY ACCOUNT
+					.bottom-toggle-block.mobile
+							a(onclick='login_reg_tooggle()') CREATE NEW ACCOUNT
+					.clearfix
+				.clearfix
+// *MODAL LOGIN FORM END*
+
+// MODAL FORGET
+.modal.fade.forget-modal(role='dialog', aria-hidden='true')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Reset your password</h4>
+			.modal-body
+				p Please, enter your registration e-mail and we will send you a link to reset your password and to set up new one
+				form.site-form
+					.row
+						.col-md-12
+							p Your registration e-mail:
+							.input-group
+								input.form-control(type='email', name='email', placeholder='E-mail', required)
+								span.input-group-addon
+									span.glyphicon.glyphicon-envelope
+					.row
+						.col-md-12
+							button.btn.btn-default(type='submit') SEND
+												
+// *MODAL FORGET END*

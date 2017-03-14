@@ -1,0 +1,81 @@
+// ------------------ USER PANEL ------------------ 
+.container-fluid#user-panel.full
+	.lable-toggle-userpanel.hvr-box-shadow-outset
+	.row.inner-wrapper
+		.col-md-12.inner
+			.top-block-user-panel
+				a.img-profile-userpanel(href='#')
+					img(src='https://tenderbride.com/files/users/photos/100077/72e10f34598ced4e01d4ae2b5fe1ff72.jpg', alt='')
+				.block-name-info-userpanel
+					// span.lable-credits-info-userpanel + credits
+					a(href='#') Pavel
+				.clearfix
+			.wrapp-list-item-userpanel
+				//balance
+				.item.item-balance.item-active
+					.name.ico.ico-balance
+						.hidenn-mini My credits
+							span.count-item-userpanel#text-user-balance 18.00
+						.new 23
+				// views
+				.item.item-views.item-active
+					.name.ico.ico-views
+						.hidenn-mini Was my guest 
+							span.count-item-userpanel#text-user-balance 54
+						.new 30
+				// smiled
+				.item.item-wink.item-active
+					.name.ico.ico-wink
+						.hidenn-mini Smiled me
+							span.count-item-userpanel#text-user-balance 120
+						.new 100
+				// liked
+				.item.item-like.item-active
+					.name.ico.ico-like
+						.hidenn-mini Smiled me
+							span.count-item-userpanel#text-user-balance 120
+						.new 40
+				// favorite
+				.item.item-fav.item-active
+					.name.ico.ico-fav
+						.hidenn-mini Added to friends 
+							span.count-item-userpanel#text-user-balance 12
+						.new 10
+				// Received letters
+				.item.item-mess.item-active
+					.name.ico.ico-mess
+						.hidenn-mini Received letters 
+							span.count-item-userpanel#text-user-balance 220
+						.new 20
+				//button chat
+				.item-openchat(onclick='chat.openWin("blank")') OPEN
+					br
+					|CHAT
+			// Bottom buttons
+			.block-bottom-userpanel
+				.more-option-userpanel More
+					ul.list-unstyled.setup-menu-more-userpanel-hide.animated.slideInLeft
+						li
+							form(action='javascript: sound_toggle()')
+								button.item-sound-switch
+									span.data-check-sound(data-check-sound='Volume OFF') Volume ON
+									span.icon_more_userpanel.ico-sound-switch.volume.ico-sound
+						li.edit_profile
+							a.clear(href='#')
+								span Change personal info
+								span.icon_more_userpanel.edit_ptofile
+						li
+							a.clear(href='#')
+								span Video gallery
+								span.icon_more_userpanel.my_videos
+						li
+							a.clear(href='#')
+								span Photo gallery
+								span.icon_more_userpanel.my_photos
+						li
+							form(action='javascript:profile.logout()')
+								button
+									span Log out
+									span.icon_more_userpanel.log_out
+				a.profile-edit-option-userpanel.clear(href='#') Change personal info
+
