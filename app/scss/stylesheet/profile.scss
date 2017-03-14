@@ -1,0 +1,214 @@
+@import "variables";
+/* ------------------------------------------- */
+/* ----------------- PROFILE ----------------- */
+.account-info > div {
+    border: 1px solid #b2b2b2;
+    width: 460px;
+    height: 210px;
+
+    .wrapper-photo{
+		width: 155px;
+		overflow: hidden;
+		text-align: center;
+		margin-top: -1px;
+		margin-bottom: -1px;
+		margin-left: -1px;
+		float: left;
+    
+		img {
+			max-width: none;
+			max-height: none;
+			min-height: 100%;
+			min-width: 100%;
+			display: inline-block;
+			width: 100%;
+		}
+
+    }
+
+	.name-user-item {
+		float: left;
+		padding: 15px 30px;
+		overflow: hidden;
+		width: calc(100% - 154px);
+		font-family: "PTSerif-Regular";
+		font-size: 26px;
+	}
+
+	.id-descriprion-user-item{
+		color: #868686;
+		float: left;
+		word-spacing: 1.5px;
+		width: calc(100% - 154px);
+		padding: 5px 30px;
+	}
+
+	.wrap-icon-links{
+		float: left;
+		width: calc(100% - 154px);
+		padding: 15px 30px;
+
+		a{
+			font-family: "PTSans-Bold";
+			text-transform: uppercase;
+			position: relative;
+			font-size: 16px;
+
+			&::before{
+				content: '';
+				position: absolute;
+			}
+		}
+
+		a.ico-chat{
+		    margin-left: 24px;
+    		margin-right: 30px;
+
+    		&::before {
+    			content: url('../image/icon/chat_pur.png');
+    			width: 15px;
+				height: 13px;
+				top: 4px;
+				left: -22px;
+    		}
+		}
+
+		a.ico-message{
+		    margin-left: 20px;
+		    float: right;
+
+    		&::before {
+				width: 16px;
+				height: 16px;
+				top: 0px;
+				left: -18px;
+				background: url(../image/icon/icon_userpanel_pur.png);
+				background-position: center -188px;
+    		}
+		}
+	}
+}
+.account-info-box > .row > div {
+	width: 460px;
+	background: #f9f9f9;
+	padding: 40px 20px;
+	min-height: 160px;
+
+	.block-credits{
+		.account-credits-title {
+			color: #9b9b9b;
+			margin-bottom: 10px;
+			font-size: 16px;
+			text-align: center;
+		}
+		.credits-now {
+			font-size: 16px;
+			margin-bottom: 15px;
+			font-family: "PTSans-Bold";
+			color: #3ba71d;
+			line-height: 30px;
+			text-align: center;
+
+			i.balance-ico{
+				background: url(../image/icon/icon_userpanel.png) no-repeat left 1px;
+				width: 20px;
+				height: 15px;
+				display: inline-block;
+				position: relative;
+				top: 1px;
+			}
+			span {
+				text-transform: lowercase;
+				font-size: 14px;
+			}
+		}
+	}
+
+	.links-account {
+		ul{
+			margin: 0px;
+
+			li {
+				margin: 5px 0;
+
+				a{
+					font-size: 16px;
+					font-family: "PTSans-Regular", sans-serift;
+				}
+			}
+		}
+	}
+}
+.account_tab{
+	position: relative;
+	padding-top: 54px;
+	margin-top: 40px;
+
+	.tabs_account{
+		position: absolute;
+		height: 54px;
+		top: 0;
+		z-index: 98;
+		margin: 0px;
+
+		li {
+			background: #f9f9f9;
+			padding: 0px;
+			margin-left: 10px;
+			color: #b2b2b2;
+			transition: all 0.1s;
+
+			&:hover{
+				margin-top: -4px;
+				
+				a{
+					height: 58px;
+				}
+			}
+
+			a{
+				padding: 0 30px;
+				width: 100%;
+				height: 54px;
+				display: table-cell;
+				vertical-align: middle;
+				color: inherit;
+				text-decoration: none;
+				cursor: pointer;
+				font-size: 16px;
+				transition: all 0.1s;
+			}
+		}
+
+		.my-mail {
+			background: $default-color;
+			color: #f2f2f2;
+		}
+
+		li.active {
+			color: $default-color;
+			background: #ffffff;
+			-webkit-box-shadow: 0px -4px 14px -5px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 0px -4px 14px -5px rgba(0, 0, 0, 0.3);
+			box-shadow: 0px -4px 14px -5px rgba(0, 0, 0, 0.3);
+			margin-top: -4px;
+				
+				a{
+					height: 58px;
+				}
+		}
+
+	}
+	.account_tab_container {
+		position: relative;
+		overflow: hidden;
+		padding: 90px 0px;
+		z-index: 10;
+		margin: 0 -15px;
+		box-shadow: 0px 2px 19px 3px rgba(0,0,0,0.21);
+		-webkit-box-shadow: 0px 2px 19px 3px rgba(0,0,0,0.21);
+		-moz-box-shadow: 0px 2px 19px 3px rgba(0,0,0,0.21);
+	}
+}
+/* -------------- *PROFILE END* -------------- */
+/* ------------------------------------------- */

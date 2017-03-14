@@ -28,7 +28,7 @@
     <!-- -------------------------------------------------------- -->
     <script src="../public/(JS)EcmaScript/_lib/jquery-3.1.1.min.js"></script>
   </head>
-  <body>
+  <body class="user">
     <!-- ---------------------- SEARCH PAGE --------------------- -->
     <!-- MENU BLOCK-->
     <div class="navbar">
@@ -133,6 +133,60 @@
       </div>
     </div>
     <!-- ------------------- *USER PANEL END* ------------------ -->
+    <!-- ---------------------- PROFILE CONENT ------------- -->
+    <div class="container">
+      <div class="row margin-tb-40">
+        <!-- ------- USER INFO BLOCK ------- -->
+        <div class="col-md-6 account-info">
+          <div>
+            <div class="wrapper-photo"><img src="https://tenderbride.com/files/users/photos/100077/72e10f34598ced4e01d4ae2b5fe1ff72.jpg"/></div>
+            <div class="name-user-item">Pavel</div>
+            <div class="id-descriprion-user-item">ACCOUNT №100077</div>
+            <div class="wrap-icon-links"><a class="ico-chat" onclick="">START CHAT</a><a class="ico-message" href="#">NEW MAIL</a></div>
+          </div>
+        </div>
+        <!-- ------- USER MENU BLOCK ------- -->
+        <div class="col-md-6 account-info-box">
+          <div class="row">
+            <div>
+              <div class="col-md-6 block-credits text-center">
+                <div class="account-credits-title">Account balance</div>
+                <div class="credits-now"> <i class="balance-ico"></i>18.00 <span>CREDITS</span></div><a class="btn btn-primary" href="buy/">GET MORE CREDITS</a>
+              </div>
+              <div class="col-md-6 links-account">
+                <ul class="list-unstyled pull-right">
+                  <li><a class="link-default" href="#">Change personal info</a></li>
+                  <li><a class="link-default" href="#">Photo gallery</a></li>
+                  <li><a class="link-default" href="#">Video gallery</a></li>
+                  <li><a class="link-default" href="#">Change password</a></li>
+                  <li><a class="link-default" href="#">Support 24/7</a></li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------- *PROFILE CONENT END* ---------- -->
+    <!-- ---------------------- PROFILE BOTTOM ------------- -->
+    <div class="container-fluid account_tab">
+      <div class="container">
+        <ul class="tabs_account list-inline">
+          <li class="active"><a id="fav_tab_func" data-class="favorite_g" onclick="tabs_myaccount(this);mes_tab(&quot;fav&quot;)">
+               MY FRIENDS</a></li>
+          <li><a id="new_tab_func" data-class="new_g" onclick="tabs_myaccount(this);mes_tab(&quot;new&quot;)">NEW GIRLS</a></li>
+          <li><a id="view_tab_func" data-class="views_g" onclick="tabs_myaccount(this);mes_tab(&quot;view&quot;)">VIEWS MY PROFILE</a></li>
+          <li class="my-mail"><a id="m_tab_func" data-class="messages_g" href="#">MY MAILS</a></li>
+        </ul>
+      </div>
+      <div class="container-fluid account_tab_container">
+        <div class="container">
+          <div class="favorite_girls_block item_tabs favorite_g active"></div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------- *PROFILE BOTTOM END* ---------- -->
     <!-- FOOTER-->
     <footer>
       <div class="container-fluid footer">

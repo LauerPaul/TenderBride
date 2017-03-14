@@ -1,0 +1,21 @@
+// ---------------------- PROFILE BOTTOM ------------- 
+.container-fluid.account_tab
+	.container
+		ul.tabs_account.list-inline
+			li.active
+				a#fav_tab_func(data-class='favorite_g', onclick='tabs_myaccount(this);mes_tab("fav")') 
+					|MY FRIENDS
+			li
+				a#new_tab_func(data-class='new_g', onclick='tabs_myaccount(this);mes_tab("new")')
+					|NEW GIRLS
+			li
+				a#view_tab_func(data-class='views_g', onclick='tabs_myaccount(this);mes_tab("view")')
+					|VIEWS MY PROFILE
+			li.my-mail
+				a#m_tab_func(data-class='messages_g', href='#')
+					|MY MAILS
+	.container-fluid.account_tab_container
+		.container
+			.favorite_girls_block.item_tabs.favorite_g.active
+
+// ------------------- *PROFILE BOTTOM END* ---------- 
