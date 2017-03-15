@@ -113,7 +113,7 @@ body{
 				display: none;
 				cursor: pointer;
 				font-family: "PTSans-Regular";
-				background: #3ba71d;
+				background: $second-color;
 				-webkit-border-radius: 2px;
 				-moz-border-radius: 2px;
 				-ms-border-radius: 2px;
@@ -224,7 +224,7 @@ body{
 			}
 			.item.item-online{
 				.name{
-					color: #3ba71d;
+					color: $second-color;
 				}
 			}
 			.item.has-webcam{
@@ -525,7 +525,7 @@ body{
 
 				a.more{
 					padding: 2px 10px;
-					background: #3BA71D;
+					background: $second-color;
 					color: $white;
 					border-radius: 4px;
 					display: inline-block;
@@ -991,7 +991,7 @@ body{
 		.info-block-camera-on .camera-block-on button{
 			border: none;
 			background: transparent;
-			color: #3BA71D;
+			color: $second-color;
 			text-decoration: underline;
 			margin-top: 5px;
 			cursor: pointer;
