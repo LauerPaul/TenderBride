@@ -1,4 +1,4 @@
-/* ---------------- USER PANEL --------------- */
+/*---------------- USER PANEL --------------- */
 .container-fluid#user-panel{
 	background: #fff none repeat scroll 0 0;
 	bottom: 0;
@@ -32,7 +32,7 @@
 		
 		.top-block-user-panel {
 			background: #8e72af;
-			padding: 12px 20px;
+			padding: 12px 10px;
 			position: relative;
 			
 			.img-profile-userpanel {
@@ -158,7 +158,7 @@
 					background: $white;
 				    border: 3px solid #8d72b1;
 				    border-radius: 4px;
-					// display: none;
+					display: none;
 					
 					.title{
 						background: #555555;
@@ -201,6 +201,31 @@
 								top: 8px;
 							}
 						}
+						.ico-views {
+							&::after{
+							    background-position: left -39px !important;
+							}
+						}
+						.ico-wink {
+							&::after {
+								    background: transparent url(../image/icon/wink_W.png) no-repeat scroll !important;
+							}
+						}
+						.ico-like {
+							&::after {
+								background-position: left -115px !important;
+							}
+						}
+						.ico-fav {
+							&::after {
+								background-position: left -152px !important;
+							}
+						}
+						.ico-mess {
+							&::after {
+								background-position: left -192px !important;
+							}
+						}
 					}
 					.scroll {
 						width: 100%;
@@ -219,6 +244,11 @@
 								border-bottom: 1px solid #E2E2E2;
 								overflow: hidden;
 								cursor: default;
+
+								> a {
+									background: #F3F3F3;
+									cursor: default;
+								}
 
 								.photo {
 									float: left;
@@ -244,7 +274,7 @@
 									    width: calc(100% - 86px);
 									    float: left;
 										
-										a {
+										a, span {
 											text-decoration: underline;
 											color: #C4C4C4;
 											font-family: "PTSans-Regular";
@@ -255,6 +285,7 @@
 											white-space: nowrap;
 											overflow: hidden;
 											text-overflow: ellipsis;
+											cursor: pointer;
 											
 											&:hover {
 												text-decoration: none;
@@ -309,7 +340,7 @@
 													opacity: 1;
 												}
 											}
-
+											
 											.ico-chat {
 												background: $default-color;
 												font-size: 11px;
@@ -351,9 +382,9 @@
 										float: right;
 										color: #C4C4C4;
 										font-family: "PTSans-Regular";
-										font-size: 13px;
+										font-size: 12px;
 										font-weight: normal;
-										width: 86px;
+										width: 82px;
 										margin: 20px 0px 0 0;
 									}
 								}
@@ -387,6 +418,7 @@
 										.time {
 											display: none;
 										}
+										
 									}
 								}
 							}
@@ -396,7 +428,7 @@
 								overflow: hidden;
 								background: rgba(243, 243, 243, 0.58);
 								display: block;
-								background: #F3F3F3;
+								background: $white;
 							}
 						}
 					}
@@ -406,6 +438,77 @@
 						top: 49px !important;
 					}
 			
+				}
+				.popup.mess {
+					.title{
+						.reset-new {
+							line-height: 8px;
+							clear: both;
+							font-size: 12px;
+							margin-top: -11px;
+						}
+						.go_to_mess_link {
+							float: right;
+							margin-top: -3px;
+							padding: 0 15px;
+							font-family: $font-family-sans-serif;
+							font-size: 12px;
+							transition: all 0.2s;
+							opacity: 0.7;
+							color: #fff;
+						}
+					}
+					.scroll ul.wrapp_for_popup li {
+						.text .wrap{
+							width: 100%;
+							margin: 9px 0;
+
+							.dialog-title {
+								font-family: $font-family-sans-serif;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+								color: $gray-dark;
+							    letter-spacing: 0.4px;
+							    width: 60%;
+							    cursor: pointer;
+							}
+
+							.dialog-text {
+								font-family: $font-family-sans-serif;
+								font-size: 12px;
+								height: 30px;
+								width: 96%;
+								overflow: hidden;
+								color: $gray-dark;
+								letter-spacing: 0.4px;
+								display: -webkit-box;
+								-webkit-line-clamp: 2;
+								-webkit-box-orient: vertical;
+								text-overflow: ellipsis;
+							}
+						}
+
+						.text .time {
+							position: absolute;
+							top: -10px;
+							right: 10px;
+						}
+
+						&:hover {
+							.text .wrap{
+								.dialog-text {
+									display: none;
+								}
+								.username {
+									float: none;
+								}
+							}
+							.text .time {
+								display: block;
+							}
+						}
+					}
 				}
 			}
 
@@ -644,4 +747,4 @@
 .container-fluid#user-panel.mini{
 	
 }
-/* ------------- *USER PANEL END* ------------ */
+/* ------------- *USER PANEL END* ------------*/
