@@ -5,6 +5,21 @@
     border: 1px solid #b2b2b2;
     width: 460px;
     height: 210px;
+    
+    @media (max-width: 767px) {
+		margin: 0 auto;
+		max-width: 410px;
+    }
+    @media (max-width: 991px) and (min-width: 768px) {
+		width: 100%;
+		max-width: 405px;
+	}
+	@media (max-width: 991px) {
+		height: 163px;
+	}
+    @media (max-width: 1089px) and (min-width: 992px) {
+    	width: 100%;
+    }
 
     .wrapper-photo{
 		width: 155px;
@@ -14,6 +29,10 @@
 		margin-bottom: -1px;
 		margin-left: -1px;
 		float: left;
+		
+		@media (max-width: 991px) {
+			width: 120px;
+		}
     
 		img {
 			max-width: none;
@@ -33,6 +52,13 @@
 		width: calc(100% - 154px);
 		font-family: "PTSerif-Regular";
 		font-size: 26px;
+		
+		@media (max-width: 991px) {
+			font-size: 24px;
+			padding-top: 25px;
+			width: calc(100% - 119px);
+		}
+
 	}
 
 	.id-descriprion-user-item{
@@ -41,6 +67,10 @@
 		word-spacing: 1.5px;
 		width: calc(100% - 154px);
 		padding: 5px 30px;
+		
+		@media (max-width: 991px) {
+			width: calc(100% - 119px);
+		}
 	}
 
 	.wrap-icon-links{
@@ -49,7 +79,7 @@
 		padding: 15px 30px;
 
 		a{
-			font-family: "PTSans-Bold";
+			font-family: $font-family-bold;
 			text-transform: uppercase;
 			position: relative;
 			font-size: 16px;
@@ -57,6 +87,10 @@
 			&::before{
 				content: '';
 				position: absolute;
+			}
+
+			@media (max-width: 991px) {
+				font-size: 14px;
 			}
 		}
 
@@ -85,6 +119,15 @@
 				background: url(../image/icon/icon_userpanel_pur.png);
 				background-position: center -188px;
     		}
+			@media (max-width: 1089px) and (min-width: 992px) {
+				float: left;
+				margin-top: 10px;
+			}
+		}
+
+		@media (max-width: 991px) {
+			font-size: 14px;
+			width: calc(100% - 119px);
 		}
 	}
 }
@@ -94,8 +137,26 @@
 	padding: 40px 20px;
 	min-height: 160px;
 	float: right;
+	
+	@media (max-width: 767px) {
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+		margin-top: 20px;
+		max-width: 410px;
+		background: $white;
+		padding-bottom: 0px;
+	}
+	@media (max-width: 991px) and (min-width: 768px) {
+		width: 100%;
+		padding: 21px 15px;
+	}
+	@media (max-width: 1089px) and (min-width: 992px) {
+		width: 100%;
+	}
 
 	.block-credits{
+
 		.account-credits-title {
 			color: #9b9b9b;
 			margin-bottom: 10px;
@@ -123,11 +184,69 @@
 				font-size: 14px;
 			}
 		}
+		.dropdown {
+			display: none;
+			
+			.caret {
+				color: #b2b2b2;
+				
+				i.fa {
+					position: absolute;
+					left: -12px;
+					top: 4px;
+				}
+
+				&:hover {
+					color: $default-color;
+				}
+			}
+
+			.dropdown-menu-left {
+				left: -146px;
+				right: auto;
+				border-radius: 0px;
+				padding: 0px;
+				-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+				border: 0px;
+				
+				li > a{
+				    padding: 5px 10px;
+					color: #9c9c9c;
+					letter-spacing: 0.8px;
+					font-size: 14px;
+					font-family: $font-family-sans-serif;
+				
+					&:hover {
+						background: $default-color;
+						color: $white;
+					}
+				}
+			}
+
+			@media (max-width: 991px) and (min-width: 768px) {
+				display: block;
+				position: absolute;
+				top: -15px;
+				right: -3px;
+			}
+		}
+
+		@media (max-width: 991px) and (min-width: 768px) {
+			width: 100%;	
+		}
 	}
 
 	.links-account {
+		@media (max-width: 991px) and (min-width: 768px) {
+			display: none;
+		}
+
 		ul{
 			margin: 0px;
+			@media (max-width: 767px) {
+				margin-top: -5px;
+			}
 
 			li {
 				margin: 5px 0;
@@ -135,15 +254,23 @@
 				a{
 					font-size: 16px;
 					font-family: "PTSans-Regular", sans-serift;
+					
+					@media (max-width: 767px) {
+						font-size: 14px;
+					}
 				}
 			}
 		}
 	}
 }
-.account_tab{
+.account_tab {
 	position: relative;
 	padding-top: 54px;
 	margin-top: 40px;
+	
+	@media (max-width: 991px) {
+		padding-top: 48px;
+	}
 
 	.tabs_account{
 		position: absolute;
@@ -164,6 +291,10 @@
 				
 				a{
 					height: 58px;
+					
+					@media (max-width: 991px) {
+						height: 52px;
+					}
 				}
 			}
 
@@ -178,6 +309,12 @@
 				cursor: pointer;
 				font-size: 16px;
 				transition: all 0.1s;
+				
+				@media (max-width: 991px) {
+					font-size: 13px;
+					height: 48px;
+					padding: 0 25px;
+				}
 			}
 		}
 
@@ -196,6 +333,10 @@
 				
 				a{
 					height: 58px;
+					
+					@media (max-width: 991px) {
+						height: 52px;
+					}
 				}
 		}
 
@@ -217,6 +358,11 @@
 				padding-left: 20px;
 				margin-top: 0px;
 				margin-bottom: 50px;
+				
+				@media (max-width: 991px) {
+					font-size: 32px;
+					margin-bottom: 35px;
+				}
 			}
 
 			a.btn.pull-right{
@@ -225,6 +371,21 @@
 
 			.girl-list {
 				padding: 0px;
+			}
+		}
+
+		@media (max-width: 991px) {
+			padding: 50px 0;
+		}
+
+	}
+}
+body.user {
+	>.site-wrapper.container-fluid{
+		.account_tab {
+			.account_tab_container {
+				margin-left: -80px;
+				padding-left: 80px;
 			}
 		}
 	}

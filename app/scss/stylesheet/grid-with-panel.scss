@@ -1,0 +1,29 @@
+/* ------------------------------------------- */
+/* ----------- GRID WITH USER PANEL ---------- */
+body.user {
+	
+	.site-wrapper.container-fluid{
+		padding-left: 65px;
+		padding-right: 0px;
+	}
+
+	.container {
+		@media (max-width: 991px) and (min-width: 768px) {
+			width: 690px;
+		}
+		@media (max-width: 1089px) and (min-width: 992px) {
+			width: 896px;
+		}
+		@media (max-width: 1199px) and (min-width: 1090px) {
+			width: 986px;
+		}
+		@media (max-width: 1399px) and (min-width: 1200px) {
+			width: 1100px;
+		}
+		@media (min-width: 1400px) {
+			width: 1200px;
+		}
+	}
+}
+/* ------- *GRID WITH USER PANEL END* -------- */
+/* ------------------------------------------- */

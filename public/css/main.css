@@ -6331,20 +6331,11 @@ button.close {
     background-color: #eee; }
 
 /* --------- *WEBKIT SCROLL END* --------- */
-@media (max-width: 991px) and (min-width: 768px) {
-  body.user .container {
-    width: 750px; } }
-
-@media (max-width: 1399px) and (min-width: 992px) {
-  body.user .container {
-    width: 1100px; } }
-
-@media (min-width: 1400px) {
-  body.user .container {
-    width: 1200px; } }
-
 .margin-tb-40 {
   margin: 40px 0; }
+  @media (max-width: 991px) {
+    .margin-tb-40 {
+      margin: 20px 0; } }
 
 a:focus, button {
   outline: 0 !important; }
@@ -6655,6 +6646,57 @@ i.ico-chat {
   top: 2px;
   margin-right: 5px; }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  .navbar-nav > li.logo-site > a > img {
+    width: 120px; } }
+
+@media (max-width: 991px) {
+  .navbar-nav > li > a {
+    font-size: 13px; } }
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    float: none;
+    text-align: center; }
+    .navbar-brand img {
+      display: inline; }
+  .navbar-collapse.in {
+    border-top: 1px solid #dedede; }
+  .navbar-nav {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+    .navbar-nav > li > a > .online_count_label {
+      display: none; } }
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ----------- GRID WITH USER PANEL ---------- */
+body.user .site-wrapper.container-fluid {
+  padding-left: 65px;
+  padding-right: 0px; }
+
+@media (max-width: 991px) and (min-width: 768px) {
+  body.user .container {
+    width: 690px; } }
+
+@media (max-width: 1089px) and (min-width: 992px) {
+  body.user .container {
+    width: 896px; } }
+
+@media (max-width: 1199px) and (min-width: 1090px) {
+  body.user .container {
+    width: 986px; } }
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+  body.user .container {
+    width: 1100px; } }
+
+@media (min-width: 1400px) {
+  body.user .container {
+    width: 1200px; } }
+
+/* ------- *GRID WITH USER PANEL END* -------- */
+/* ------------------------------------------- */
 /* ------------------------------------------- */
 /* -------------FOOTER SITE------------- */
 footer .container-fluid.footer {
@@ -8453,6 +8495,95 @@ footer .container-fluid.footer-second {
   .container-fluid#user-panel.full .wrapp-list-item-userpanel .item .popup {
     left: 233px; }
 
+.container-fluid#user-panel.mini {
+  width: 60px; }
+  .container-fluid#user-panel.mini .hide-mini {
+    display: none !important; }
+  .container-fluid#user-panel.mini .inner .top-block-user-panel .block-name-info-userpanel {
+    display: none; }
+  .container-fluid#user-panel.mini .inner .wrapp-list-item-userpanel .item {
+    padding: 18px 0; }
+    .container-fluid#user-panel.mini .inner .wrapp-list-item-userpanel .item .ico::after {
+      left: 22px;
+      top: 12px; }
+    .container-fluid#user-panel.mini .inner .wrapp-list-item-userpanel .item .popup {
+      left: 72px; }
+      .container-fluid#user-panel.mini .inner .wrapp-list-item-userpanel .item .popup .title .ico::after {
+        left: 10px;
+        top: 7px; }
+  .container-fluid#user-panel.mini .inner .wrapp-list-item-userpanel .item-openchat {
+    border-radius: 0px; }
+  .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel {
+    width: 100%; }
+    .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li {
+      position: relative;
+      height: 33px; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li span:first-child {
+        opacity: 0;
+        display: block;
+        left: -10%;
+        position: absolute;
+        z-index: -1;
+        padding: 8px 5px;
+        width: 120px;
+        background: #ad99c5;
+        bottom: 1px;
+        top: 1px;
+        line-height: 11px;
+        -webkit-transition: opacity 0.5s, left 1s;
+        transition: opacity 0.5s, left 1s; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li .icon_more_userpanel {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li .icon_more_userpanel::before {
+          content: '';
+          background: url(../image/icon/more_userpanel_ico.png) no-repeat;
+          position: absolute;
+          top: -50%;
+          left: -50%;
+          bottom: -50%;
+          right: -50%;
+          width: 20px;
+          height: 20px;
+          margin: 0 auto; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li .icon_more_userpanel.volume::before {
+        background-position: left top;
+        bottom: 3px;
+        top: auto; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li .icon_more_userpanel.edit_ptofile::before {
+        background-position: left -46px; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li .icon_more_userpanel.my_videos::before {
+        background-position: left -77px; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li .icon_more_userpanel.my_photos::before {
+        background-position: left -107px; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li .icon_more_userpanel.log_out::before {
+        background-position: left -139px;
+        bottom: 3px;
+        top: auto; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li:hover .icon_more_userpanel.volume::before {
+        background-position: -22px top;
+        bottom: 3px;
+        top: auto; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li:hover .icon_more_userpanel.edit_ptofile::before {
+        background-position: -22px -46px; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li:hover .icon_more_userpanel.my_videos::before {
+        background-position: -22px -77px; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li:hover .icon_more_userpanel.my_photos::before {
+        background-position: -22px -107px; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li:hover .icon_more_userpanel.log_out::before {
+        background-position: -22px -139px;
+        bottom: 3px;
+        top: auto; }
+      .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li:hover span:first-child {
+        display: block;
+        position: absolute;
+        left: 100%;
+        opacity: 1; }
+    .container-fluid#user-panel.mini .inner .block-bottom-userpanel .more-option-userpanel .setup-menu-more-userpanel-hide li.edit_profile {
+      display: block; }
+
 /* ------------- *USER PANEL END* ------------*/
 /* ------------------------------------------- */
 /* ------------------------------------------- */
@@ -8461,6 +8592,20 @@ footer .container-fluid.footer-second {
   border: 1px solid #b2b2b2;
   width: 460px;
   height: 210px; }
+  @media (max-width: 767px) {
+    .account-info > div {
+      margin: 0 auto;
+      max-width: 410px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .account-info > div {
+      width: 100%;
+      max-width: 405px; } }
+  @media (max-width: 991px) {
+    .account-info > div {
+      height: 163px; } }
+  @media (max-width: 1089px) and (min-width: 992px) {
+    .account-info > div {
+      width: 100%; } }
   .account-info > div .wrapper-photo {
     width: 155px;
     overflow: hidden;
@@ -8469,6 +8614,9 @@ footer .container-fluid.footer-second {
     margin-bottom: -1px;
     margin-left: -1px;
     float: left; }
+    @media (max-width: 991px) {
+      .account-info > div .wrapper-photo {
+        width: 120px; } }
     .account-info > div .wrapper-photo img {
       max-width: none;
       max-height: none;
@@ -8483,12 +8631,20 @@ footer .container-fluid.footer-second {
     width: calc(100% - 154px);
     font-family: "PTSerif-Regular";
     font-size: 26px; }
+    @media (max-width: 991px) {
+      .account-info > div .name-user-item {
+        font-size: 24px;
+        padding-top: 25px;
+        width: calc(100% - 119px); } }
   .account-info > div .id-descriprion-user-item {
     color: #868686;
     float: left;
     word-spacing: 1.5px;
     width: calc(100% - 154px);
     padding: 5px 30px; }
+    @media (max-width: 991px) {
+      .account-info > div .id-descriprion-user-item {
+        width: calc(100% - 119px); } }
   .account-info > div .wrap-icon-links {
     float: left;
     width: calc(100% - 154px);
@@ -8501,6 +8657,9 @@ footer .container-fluid.footer-second {
       .account-info > div .wrap-icon-links a::before {
         content: '';
         position: absolute; }
+      @media (max-width: 991px) {
+        .account-info > div .wrap-icon-links a {
+          font-size: 14px; } }
     .account-info > div .wrap-icon-links a.ico-chat {
       margin-left: 24px;
       margin-right: 30px; }
@@ -8520,6 +8679,14 @@ footer .container-fluid.footer-second {
         left: -18px;
         background: url(../image/icon/icon_userpanel_pur.png);
         background-position: center -188px; }
+      @media (max-width: 1089px) and (min-width: 992px) {
+        .account-info > div .wrap-icon-links a.ico-message {
+          float: left;
+          margin-top: 10px; } }
+    @media (max-width: 991px) {
+      .account-info > div .wrap-icon-links {
+        font-size: 14px;
+        width: calc(100% - 119px); } }
 
 .account-info-box > .row > div {
   width: 460px;
@@ -8527,6 +8694,22 @@ footer .container-fluid.footer-second {
   padding: 40px 20px;
   min-height: 160px;
   float: right; }
+  @media (max-width: 767px) {
+    .account-info-box > .row > div {
+      float: none;
+      margin: 0 auto;
+      width: 100%;
+      margin-top: 20px;
+      max-width: 410px;
+      background: #ffffff;
+      padding-bottom: 0px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .account-info-box > .row > div {
+      width: 100%;
+      padding: 21px 15px; } }
+  @media (max-width: 1089px) and (min-width: 992px) {
+    .account-info-box > .row > div {
+      width: 100%; } }
   .account-info-box > .row > div .block-credits .account-credits-title {
     color: #9b9b9b;
     margin-bottom: 10px;
@@ -8549,18 +8732,66 @@ footer .container-fluid.footer-second {
     .account-info-box > .row > div .block-credits .credits-now span {
       text-transform: lowercase;
       font-size: 14px; }
+  .account-info-box > .row > div .block-credits .dropdown {
+    display: none; }
+    .account-info-box > .row > div .block-credits .dropdown .caret {
+      color: #b2b2b2; }
+      .account-info-box > .row > div .block-credits .dropdown .caret i.fa {
+        position: absolute;
+        left: -12px;
+        top: 4px; }
+      .account-info-box > .row > div .block-credits .dropdown .caret:hover {
+        color: #8E72AF; }
+    .account-info-box > .row > div .block-credits .dropdown .dropdown-menu-left {
+      left: -146px;
+      right: auto;
+      border-radius: 0px;
+      padding: 0px;
+      -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      border: 0px; }
+      .account-info-box > .row > div .block-credits .dropdown .dropdown-menu-left li > a {
+        padding: 5px 10px;
+        color: #9c9c9c;
+        letter-spacing: 0.8px;
+        font-size: 14px;
+        font-family: "PTSans-Regular", sans-serift; }
+        .account-info-box > .row > div .block-credits .dropdown .dropdown-menu-left li > a:hover {
+          background: #8E72AF;
+          color: #ffffff; }
+    @media (max-width: 991px) and (min-width: 768px) {
+      .account-info-box > .row > div .block-credits .dropdown {
+        display: block;
+        position: absolute;
+        top: -15px;
+        right: -3px; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .account-info-box > .row > div .block-credits {
+      width: 100%; } }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .account-info-box > .row > div .links-account {
+      display: none; } }
   .account-info-box > .row > div .links-account ul {
     margin: 0px; }
+    @media (max-width: 767px) {
+      .account-info-box > .row > div .links-account ul {
+        margin-top: -5px; } }
     .account-info-box > .row > div .links-account ul li {
       margin: 5px 0; }
       .account-info-box > .row > div .links-account ul li a {
         font-size: 16px;
         font-family: "PTSans-Regular", sans-serift; }
+        @media (max-width: 767px) {
+          .account-info-box > .row > div .links-account ul li a {
+            font-size: 14px; } }
 
 .account_tab {
   position: relative;
   padding-top: 54px;
   margin-top: 40px; }
+  @media (max-width: 991px) {
+    .account_tab {
+      padding-top: 48px; } }
   .account_tab .tabs_account {
     position: absolute;
     height: 54px;
@@ -8577,6 +8808,9 @@ footer .container-fluid.footer-second {
         margin-top: -4px; }
         .account_tab .tabs_account li:hover a {
           height: 58px; }
+          @media (max-width: 991px) {
+            .account_tab .tabs_account li:hover a {
+              height: 52px; } }
       .account_tab .tabs_account li a {
         padding: 0 30px;
         width: 100%;
@@ -8588,6 +8822,11 @@ footer .container-fluid.footer-second {
         cursor: pointer;
         font-size: 16px;
         transition: all 0.1s; }
+        @media (max-width: 991px) {
+          .account_tab .tabs_account li a {
+            font-size: 13px;
+            height: 48px;
+            padding: 0 25px; } }
     .account_tab .tabs_account .my-mail {
       background: #8E72AF;
       color: #f2f2f2; }
@@ -8600,6 +8839,9 @@ footer .container-fluid.footer-second {
       margin-top: -4px; }
       .account_tab .tabs_account li.active a {
         height: 58px; }
+        @media (max-width: 991px) {
+          .account_tab .tabs_account li.active a {
+            height: 52px; } }
   .account_tab .account_tab_container {
     position: relative;
     overflow: hidden;
@@ -8614,10 +8856,21 @@ footer .container-fluid.footer-second {
       padding-left: 20px;
       margin-top: 0px;
       margin-bottom: 50px; }
+      @media (max-width: 991px) {
+        .account_tab .account_tab_container .favorite_girls_block h3 {
+          font-size: 32px;
+          margin-bottom: 35px; } }
     .account_tab .account_tab_container .favorite_girls_block a.btn.pull-right {
       margin-right: 20px; }
     .account_tab .account_tab_container .favorite_girls_block .girl-list {
       padding: 0px; }
+    @media (max-width: 991px) {
+      .account_tab .account_tab_container {
+        padding: 50px 0; } }
+
+body.user > .site-wrapper.container-fluid .account_tab .account_tab_container {
+  margin-left: -80px;
+  padding-left: 80px; }
 
 /* -------------- *PROFILE END* -------------- */
 /* ------------------------------------------- */
