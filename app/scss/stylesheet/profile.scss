@@ -9,6 +9,7 @@
     @media (max-width: 767px) {
 		margin: 0 auto;
 		max-width: 410px;
+		width: 100%;
     }
     @media (max-width: 991px) and (min-width: 768px) {
 		width: 100%;
@@ -17,9 +18,13 @@
 	@media (max-width: 991px) {
 		height: 163px;
 	}
-    @media (max-width: 1089px) and (min-width: 992px) {
+    @media (max-width: 1089px) and (min-width: 992px){
     	width: 100%;
     }
+	@media (max-width: 440px) {
+		height: 285px;
+		border: 0px;
+	}
 
     .wrapper-photo{
 		width: 155px;
@@ -32,6 +37,10 @@
 		
 		@media (max-width: 991px) {
 			width: 120px;
+		}
+		@media (max-width: 440px) {
+			width: 120px;
+			border: 1px solid #dedede;
 		}
     
 		img {
@@ -58,6 +67,16 @@
 			padding-top: 25px;
 			width: calc(100% - 119px);
 		}
+		@media (max-width: 535px) {
+			padding-top: 20px;
+		}
+
+		@media (max-width: 440px) {
+			clear: both;
+			width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
 
 	}
 
@@ -70,6 +89,12 @@
 		
 		@media (max-width: 991px) {
 			width: calc(100% - 119px);
+		}
+		@media (max-width: 440px) {
+			clear: both;
+			width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
 		}
 	}
 
@@ -91,6 +116,9 @@
 
 			@media (max-width: 991px) {
 				font-size: 14px;
+			}
+			@media (max-width: 535px) {
+				font-size: 12px;
 			}
 		}
 
@@ -123,11 +151,30 @@
 				float: left;
 				margin-top: 10px;
 			}
+
+			@media (max-width: 535px) and (min-width: 441px){
+				float: none;
+				clear: both;
+				display: block;
+				margin-top: 6px;
+			}
+
+			@media (max-width: 440px) {
+				float: none;
+				clear: none;
+				margin-left: 10px;
+			}
 		}
 
 		@media (max-width: 991px) {
 			font-size: 14px;
 			width: calc(100% - 119px);
+		}
+		@media (max-width: 440px) {
+			clear: both;
+			width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
 		}
 	}
 }
@@ -155,13 +202,27 @@
 		width: 100%;
 	}
 
-	.block-credits{
+	@media (max-width: 440px) {
+		padding: 0px;
+		padding-top: 30px;
+		margin-top: 0px;
+		min-height: 90px;
+	}
+
+	.block-credits {
 
 		.account-credits-title {
 			color: #9b9b9b;
 			margin-bottom: 10px;
 			font-size: 16px;
 			text-align: center;
+			
+			@media (max-width: 440px) {
+				font-size: 14px;
+				width: 50%;
+				text-align: left;
+				display: inline-block;
+			}
 		}
 		.credits-now {
 			font-size: 16px;
@@ -182,6 +243,13 @@
 			span {
 				text-transform: lowercase;
 				font-size: 14px;
+			}
+
+			@media (max-width: 440px) {
+				font-size: 14px;
+				width: 50%;
+				text-align: left;
+				display: inline;
 			}
 		}
 		.dropdown {
@@ -230,10 +298,21 @@
 				top: -15px;
 				right: -3px;
 			}
+			@media (max-width: 440px) {
+				display: block;
+				position: absolute;
+				top: -10px;
+				right: -3px;
+			}
 		}
 
 		@media (max-width: 991px) and (min-width: 768px) {
 			width: 100%;	
+		}
+
+		@media (max-width: 440px) {
+			width: 100%;
+			text-align: left;
 		}
 	}
 
@@ -241,7 +320,9 @@
 		@media (max-width: 991px) and (min-width: 768px) {
 			display: none;
 		}
-
+		@media (max-width: 440px) {
+			display: none;
+		}
 		ul{
 			margin: 0px;
 			@media (max-width: 767px) {
@@ -272,12 +353,25 @@
 		padding-top: 48px;
 	}
 
+	@media (max-width: 750px) {
+		padding-top: 169px;
+	}
+
+	@media (max-width: 440px) {
+		margin-top: 0px;
+	}
+
 	.tabs_account{
 		position: absolute;
 		height: 54px;
 		top: 0;
 		z-index: 98;
 		margin: 0px;
+	
+		@media (max-width: 750px) {
+			width: 100%;
+			margin-left: -43px;
+		}
 
 		li {
 			background: #f9f9f9;
@@ -314,6 +408,29 @@
 					font-size: 13px;
 					height: 48px;
 					padding: 0 25px;
+				}
+				@media (max-width: 750px) {
+					width: 100%;
+					display: inline-block;
+					padding: 13px 20px;
+					height: 40px;
+				}
+			}
+
+			@media (max-width: 750px) {
+				display: block;
+				clear: both;
+				width: 100%;
+				-webkit-box-shadow: 0px -5px 1px -5px rgba(0, 0, 0, 0.25);
+				-moz-box-shadow: 0px -5px 1px -5px rgba(0, 0, 0, 0.25);
+				box-shadow: 0px -5px 1px -5px rgba(0, 0, 0, 0.25);
+				
+				&:hover{
+					margin-top: -5px;
+					
+					a {
+						height: 45px;
+					}
 				}
 			}
 		}
@@ -363,10 +480,16 @@
 					font-size: 32px;
 					margin-bottom: 35px;
 				}
+				@media (max-width: 750px) {
+					font-size: 26px;
+				}
 			}
 
 			a.btn.pull-right{
 				margin-right: 20px;
+				@media (max-width: 991px) {
+					display: none;
+				}
 			}
 
 			.girl-list {
@@ -374,10 +497,14 @@
 			}
 		}
 
-		@media (max-width: 991px) {
+		@media (max-width: 991px) and (min-width: 551px) {
 			padding: 50px 0;
 		}
 
+		@media (max-width: 550px) {
+			padding: 25px 0;
+			font-size: 24px;
+		}
 	}
 }
 body.user {

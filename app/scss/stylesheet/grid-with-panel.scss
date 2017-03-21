@@ -2,9 +2,37 @@
 /* ----------- GRID WITH USER PANEL ---------- */
 body.user {
 	
-	.site-wrapper.container-fluid{
+	.site-wrapper.container-fluid, 
+	footer .container-fluid.footer-second, 
+	footer .container-fluid.footer {
 		padding-left: 65px;
 		padding-right: 0px;
+	}
+
+	@media (max-width: 551px) { 
+		footer .container-fluid.footer {
+			padding-top: 30px;	
+			padding-bottom: 30px;
+		}
+		@media (max-width: 551px) {
+			footer .container-fluid.footer-second, 
+			footer .container-fluid.footer {
+				.col-xs-6 {
+					width: 100%;
+					text-align: center;
+					
+					.pull-right.cards-icon {
+						float: none !important;
+						margin: auto;
+						margin-top: 10px;
+					}
+
+					a {
+						font-size: 12px;
+					}
+				}
+			}
+		}
 	}
 
 	.container {

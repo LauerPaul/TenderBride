@@ -271,12 +271,70 @@
 	}
 }
 body.user {
+	@media (max-width: 626px) {
+		.col-xxs-user {
+			width: 100%;
+		}
+	}
 	.item-user-profile-mini {
+
+		@media (max-width: 750px) {
+			padding-bottom: 10px;
+			max-width: 258px;
+		}
+		
+		.description-item-one {
+			@media (max-width: 750px) {
+				margin-bottom: 10px;
+			}
+			.old_this_user{
+				@media (max-width: 750px) {
+					font-size: 14px;
+				}
+			}
+			.country_this_user {
+				@media (max-width: 750px) {
+					font-size: 14px;
+				}
+			}
+		}
+
+		.name-user-item {
+			@media (max-width: 750px) {
+				font-size: 22px;
+			}
+		}
 
 		.id-descriprion-user-item {
 
 			.id-descript {
-				
+				@media (max-width: 750px) {
+					font-size: 13px;
+				}
+			}
+			.has-webcam-label {
+				@media (max-width: 750px) {
+					height: 9px;
+					width: 66px;
+					background-size: cover;
+				}
+			}
+		}
+		ul {
+			@media (max-width: 750px) {
+				margin-top: 10px;
+			}
+
+			li span {
+				@media (max-width: 750px) and (min-width: 627px) {
+					font-size: 10px;
+					padding: 7px 0;
+				}
+				@media (max-width: 626px) {		
+					i.ico-chat {
+						height: 12px;
+					}
+				}
 			}
 		}
 	}

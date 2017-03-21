@@ -6668,12 +6668,36 @@ i.ico-chat {
     .navbar-nav > li > a > .online_count_label {
       display: none; } }
 
+.site-wrapper.container-fluid {
+  padding: 0px; }
+
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 /* ----------- GRID WITH USER PANEL ---------- */
-body.user .site-wrapper.container-fluid {
+body.user .site-wrapper.container-fluid,
+body.user footer .container-fluid.footer-second,
+body.user footer .container-fluid.footer {
   padding-left: 65px;
   padding-right: 0px; }
+
+@media (max-width: 551px) {
+  body.user footer .container-fluid.footer {
+    padding-top: 30px;
+    padding-bottom: 30px; } }
+
+@media (max-width: 551px) and (max-width: 551px) {
+  body.user footer .container-fluid.footer-second .col-xs-6,
+  body.user footer .container-fluid.footer .col-xs-6 {
+    width: 100%;
+    text-align: center; }
+    body.user footer .container-fluid.footer-second .col-xs-6 .pull-right.cards-icon,
+    body.user footer .container-fluid.footer .col-xs-6 .pull-right.cards-icon {
+      float: none !important;
+      margin: auto;
+      margin-top: 10px; }
+    body.user footer .container-fluid.footer-second .col-xs-6 a,
+    body.user footer .container-fluid.footer .col-xs-6 a {
+      font-size: 12px; } }
 
 @media (max-width: 991px) and (min-width: 768px) {
   body.user .container {
@@ -7149,6 +7173,54 @@ footer .container-fluid.footer-second {
         color: white;
         -webkit-box-shadow: none;
         box-shadow: none; }
+
+@media (max-width: 626px) {
+  body.user .col-xxs-user {
+    width: 100%; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini {
+    padding-bottom: 10px;
+    max-width: 258px; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini .description-item-one {
+    margin-bottom: 10px; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini .description-item-one .old_this_user {
+    font-size: 14px; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini .description-item-one .country_this_user {
+    font-size: 14px; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini .name-user-item {
+    font-size: 22px; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini .id-descriprion-user-item .id-descript {
+    font-size: 13px; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini .id-descriprion-user-item .has-webcam-label {
+    height: 9px;
+    width: 66px;
+    background-size: cover; } }
+
+@media (max-width: 750px) {
+  body.user .item-user-profile-mini ul {
+    margin-top: 10px; } }
+
+@media (max-width: 750px) and (min-width: 627px) {
+  body.user .item-user-profile-mini ul li span {
+    font-size: 10px;
+    padding: 7px 0; } }
+
+@media (max-width: 626px) {
+  body.user .item-user-profile-mini ul li span i.ico-chat {
+    height: 12px; } }
 
 /* -------------*USER GRID PROFILE MINI END*------------- */
 /* ------------------------------------------- */
@@ -8595,7 +8667,8 @@ footer .container-fluid.footer-second {
   @media (max-width: 767px) {
     .account-info > div {
       margin: 0 auto;
-      max-width: 410px; } }
+      max-width: 410px;
+      width: 100%; } }
   @media (max-width: 991px) and (min-width: 768px) {
     .account-info > div {
       width: 100%;
@@ -8606,6 +8679,10 @@ footer .container-fluid.footer-second {
   @media (max-width: 1089px) and (min-width: 992px) {
     .account-info > div {
       width: 100%; } }
+  @media (max-width: 440px) {
+    .account-info > div {
+      height: 285px;
+      border: 0px; } }
   .account-info > div .wrapper-photo {
     width: 155px;
     overflow: hidden;
@@ -8617,6 +8694,10 @@ footer .container-fluid.footer-second {
     @media (max-width: 991px) {
       .account-info > div .wrapper-photo {
         width: 120px; } }
+    @media (max-width: 440px) {
+      .account-info > div .wrapper-photo {
+        width: 120px;
+        border: 1px solid #dedede; } }
     .account-info > div .wrapper-photo img {
       max-width: none;
       max-height: none;
@@ -8636,6 +8717,15 @@ footer .container-fluid.footer-second {
         font-size: 24px;
         padding-top: 25px;
         width: calc(100% - 119px); } }
+    @media (max-width: 535px) {
+      .account-info > div .name-user-item {
+        padding-top: 20px; } }
+    @media (max-width: 440px) {
+      .account-info > div .name-user-item {
+        clear: both;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px; } }
   .account-info > div .id-descriprion-user-item {
     color: #868686;
     float: left;
@@ -8645,6 +8735,12 @@ footer .container-fluid.footer-second {
     @media (max-width: 991px) {
       .account-info > div .id-descriprion-user-item {
         width: calc(100% - 119px); } }
+    @media (max-width: 440px) {
+      .account-info > div .id-descriprion-user-item {
+        clear: both;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px; } }
   .account-info > div .wrap-icon-links {
     float: left;
     width: calc(100% - 154px);
@@ -8660,6 +8756,9 @@ footer .container-fluid.footer-second {
       @media (max-width: 991px) {
         .account-info > div .wrap-icon-links a {
           font-size: 14px; } }
+      @media (max-width: 535px) {
+        .account-info > div .wrap-icon-links a {
+          font-size: 12px; } }
     .account-info > div .wrap-icon-links a.ico-chat {
       margin-left: 24px;
       margin-right: 30px; }
@@ -8683,10 +8782,27 @@ footer .container-fluid.footer-second {
         .account-info > div .wrap-icon-links a.ico-message {
           float: left;
           margin-top: 10px; } }
+      @media (max-width: 535px) and (min-width: 441px) {
+        .account-info > div .wrap-icon-links a.ico-message {
+          float: none;
+          clear: both;
+          display: block;
+          margin-top: 6px; } }
+      @media (max-width: 440px) {
+        .account-info > div .wrap-icon-links a.ico-message {
+          float: none;
+          clear: none;
+          margin-left: 10px; } }
     @media (max-width: 991px) {
       .account-info > div .wrap-icon-links {
         font-size: 14px;
         width: calc(100% - 119px); } }
+    @media (max-width: 440px) {
+      .account-info > div .wrap-icon-links {
+        clear: both;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px; } }
 
 .account-info-box > .row > div {
   width: 460px;
@@ -8710,11 +8826,23 @@ footer .container-fluid.footer-second {
   @media (max-width: 1089px) and (min-width: 992px) {
     .account-info-box > .row > div {
       width: 100%; } }
+  @media (max-width: 440px) {
+    .account-info-box > .row > div {
+      padding: 0px;
+      padding-top: 30px;
+      margin-top: 0px;
+      min-height: 90px; } }
   .account-info-box > .row > div .block-credits .account-credits-title {
     color: #9b9b9b;
     margin-bottom: 10px;
     font-size: 16px;
     text-align: center; }
+    @media (max-width: 440px) {
+      .account-info-box > .row > div .block-credits .account-credits-title {
+        font-size: 14px;
+        width: 50%;
+        text-align: left;
+        display: inline-block; } }
   .account-info-box > .row > div .block-credits .credits-now {
     font-size: 16px;
     margin-bottom: 15px;
@@ -8732,6 +8860,12 @@ footer .container-fluid.footer-second {
     .account-info-box > .row > div .block-credits .credits-now span {
       text-transform: lowercase;
       font-size: 14px; }
+    @media (max-width: 440px) {
+      .account-info-box > .row > div .block-credits .credits-now {
+        font-size: 14px;
+        width: 50%;
+        text-align: left;
+        display: inline; } }
   .account-info-box > .row > div .block-credits .dropdown {
     display: none; }
     .account-info-box > .row > div .block-credits .dropdown .caret {
@@ -8765,10 +8899,23 @@ footer .container-fluid.footer-second {
         position: absolute;
         top: -15px;
         right: -3px; } }
+    @media (max-width: 440px) {
+      .account-info-box > .row > div .block-credits .dropdown {
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: -3px; } }
   @media (max-width: 991px) and (min-width: 768px) {
     .account-info-box > .row > div .block-credits {
       width: 100%; } }
+  @media (max-width: 440px) {
+    .account-info-box > .row > div .block-credits {
+      width: 100%;
+      text-align: left; } }
   @media (max-width: 991px) and (min-width: 768px) {
+    .account-info-box > .row > div .links-account {
+      display: none; } }
+  @media (max-width: 440px) {
     .account-info-box > .row > div .links-account {
       display: none; } }
   .account-info-box > .row > div .links-account ul {
@@ -8792,12 +8939,22 @@ footer .container-fluid.footer-second {
   @media (max-width: 991px) {
     .account_tab {
       padding-top: 48px; } }
+  @media (max-width: 750px) {
+    .account_tab {
+      padding-top: 169px; } }
+  @media (max-width: 440px) {
+    .account_tab {
+      margin-top: 0px; } }
   .account_tab .tabs_account {
     position: absolute;
     height: 54px;
     top: 0;
     z-index: 98;
     margin: 0px; }
+    @media (max-width: 750px) {
+      .account_tab .tabs_account {
+        width: 100%;
+        margin-left: -43px; } }
     .account_tab .tabs_account li {
       background: #f9f9f9;
       padding: 0px;
@@ -8827,6 +8984,24 @@ footer .container-fluid.footer-second {
             font-size: 13px;
             height: 48px;
             padding: 0 25px; } }
+        @media (max-width: 750px) {
+          .account_tab .tabs_account li a {
+            width: 100%;
+            display: inline-block;
+            padding: 13px 20px;
+            height: 40px; } }
+      @media (max-width: 750px) {
+        .account_tab .tabs_account li {
+          display: block;
+          clear: both;
+          width: 100%;
+          -webkit-box-shadow: 0px -5px 1px -5px rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: 0px -5px 1px -5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px -5px 1px -5px rgba(0, 0, 0, 0.25); }
+          .account_tab .tabs_account li:hover {
+            margin-top: -5px; }
+            .account_tab .tabs_account li:hover a {
+              height: 45px; } }
     .account_tab .tabs_account .my-mail {
       background: #8E72AF;
       color: #f2f2f2; }
@@ -8860,13 +9035,23 @@ footer .container-fluid.footer-second {
         .account_tab .account_tab_container .favorite_girls_block h3 {
           font-size: 32px;
           margin-bottom: 35px; } }
+      @media (max-width: 750px) {
+        .account_tab .account_tab_container .favorite_girls_block h3 {
+          font-size: 26px; } }
     .account_tab .account_tab_container .favorite_girls_block a.btn.pull-right {
       margin-right: 20px; }
+      @media (max-width: 991px) {
+        .account_tab .account_tab_container .favorite_girls_block a.btn.pull-right {
+          display: none; } }
     .account_tab .account_tab_container .favorite_girls_block .girl-list {
       padding: 0px; }
-    @media (max-width: 991px) {
+    @media (max-width: 991px) and (min-width: 551px) {
       .account_tab .account_tab_container {
         padding: 50px 0; } }
+    @media (max-width: 550px) {
+      .account_tab .account_tab_container {
+        padding: 25px 0;
+        font-size: 24px; } }
 
 body.user > .site-wrapper.container-fluid .account_tab .account_tab_container {
   margin-left: -80px;
